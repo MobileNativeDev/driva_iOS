@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GarageHistoryCell" rowHeight="201" id="mUB-YJ-AvB" customClass="GarageHistoryCell" customModule="Driva" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mUB-YJ-AvB" id="nRG-m3-GbZ">
+                <rect key="frame" x="0.0" y="0.0" width="446" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4e-i6-X4S">
+                        <rect key="frame" x="20" y="20" width="406" height="179.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="garage0" translatesAutoresizingMaskIntoConstraints="NO" id="EpY-hN-YHA" customClass="RoundedImageView" customModule="Driva" customModuleProvider="target">
+                                <rect key="frame" x="20" y="20" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EpY-hN-YHA" secondAttribute="height" multiplier="1:1" id="CPF-zC-z4a"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0V-ZV-eUM">
+                                <rect key="frame" x="20" y="112" width="366" height="47.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="LEAVE REVIEW">
+                                    <color key="titleColor" red="0.66666666669999997" green="0.18039215689999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.66666666669999997" green="0.18039215689999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnReviewPressed:" destination="mUB-YJ-AvB" eventType="touchUpInside" id="OWi-vS-4kb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5l-Rb-KXd">
+                                <rect key="frame" x="112" y="28" width="274" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQ8-YL-7Er">
+                                <rect key="frame" x="112" y="48" width="274" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UN3-jE-dD7">
+                                <rect key="frame" x="112" y="68" width="274" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="H0V-ZV-eUM" secondAttribute="trailing" constant="20" id="3Ax-aC-Awo"/>
+                            <constraint firstItem="UQ8-YL-7Er" firstAttribute="centerY" secondItem="EpY-hN-YHA" secondAttribute="centerY" id="5Zf-LV-XZz"/>
+                            <constraint firstAttribute="trailing" secondItem="UQ8-YL-7Er" secondAttribute="trailing" constant="20" id="DC7-ZI-JDe"/>
+                            <constraint firstItem="UN3-jE-dD7" firstAttribute="leading" secondItem="EpY-hN-YHA" secondAttribute="trailing" constant="20" id="Elz-88-Mjk"/>
+                            <constraint firstItem="EpY-hN-YHA" firstAttribute="top" secondItem="a4e-i6-X4S" secondAttribute="top" constant="20" id="Olj-7s-6J1"/>
+                            <constraint firstItem="UQ8-YL-7Er" firstAttribute="top" secondItem="b5l-Rb-KXd" secondAttribute="bottom" constant="2" id="QRS-m9-kAu"/>
+                            <constraint firstItem="UN3-jE-dD7" firstAttribute="top" secondItem="UQ8-YL-7Er" secondAttribute="bottom" constant="4" id="RXs-jw-OR4"/>
+                            <constraint firstAttribute="trailing" secondItem="b5l-Rb-KXd" secondAttribute="trailing" constant="20" id="RhW-m9-QVj"/>
+                            <constraint firstAttribute="trailing" secondItem="UN3-jE-dD7" secondAttribute="trailing" constant="20" id="TQb-V1-L2h"/>
+                            <constraint firstItem="H0V-ZV-eUM" firstAttribute="leading" secondItem="a4e-i6-X4S" secondAttribute="leading" constant="20" id="Ur6-3s-u11"/>
+                            <constraint firstItem="EpY-hN-YHA" firstAttribute="height" secondItem="a4e-i6-X4S" secondAttribute="height" multiplier="0.4" id="Z0R-1b-CKI"/>
+                            <constraint firstItem="b5l-Rb-KXd" firstAttribute="leading" secondItem="EpY-hN-YHA" secondAttribute="trailing" constant="20" id="cWZ-Lq-Cqg"/>
+                            <constraint firstItem="H0V-ZV-eUM" firstAttribute="top" secondItem="EpY-hN-YHA" secondAttribute="bottom" constant="20" id="ehH-hM-umO"/>
+                            <constraint firstItem="UQ8-YL-7Er" firstAttribute="leading" secondItem="EpY-hN-YHA" secondAttribute="trailing" constant="20" id="kqO-DU-fl0"/>
+                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="H0V-ZV-eUM" secondAttribute="bottom" constant="20" id="qsF-Ag-O9E"/>
+                            <constraint firstItem="EpY-hN-YHA" firstAttribute="leading" secondItem="a4e-i6-X4S" secondAttribute="leading" constant="20" id="znm-uj-jDS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a4e-i6-X4S" firstAttribute="top" secondItem="nRG-m3-GbZ" secondAttribute="top" constant="20" id="Ibw-LO-gYP"/>
+                    <constraint firstAttribute="bottom" secondItem="a4e-i6-X4S" secondAttribute="bottom" id="Ihe-tn-oFu"/>
+                    <constraint firstItem="a4e-i6-X4S" firstAttribute="leading" secondItem="nRG-m3-GbZ" secondAttribute="leading" constant="20" id="N8D-5e-8XR"/>
+                    <constraint firstAttribute="trailing" secondItem="a4e-i6-X4S" secondAttribute="trailing" constant="20" id="rPK-Ds-kI2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgPhoto" destination="EpY-hN-YHA" id="2h9-jM-Psh"/>
+                <outlet property="lblAddress" destination="UQ8-YL-7Er" id="fXa-ou-M7F"/>
+                <outlet property="lblFinished" destination="UN3-jE-dD7" id="5P5-Pp-8Qd"/>
+                <outlet property="lblTitle" destination="b5l-Rb-KXd" id="rFR-eY-yP7"/>
+            </connections>
+            <point key="canvasLocation" x="-190" y="-196"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="garage0" width="200" height="150"/>
+    </resources>
+</document>

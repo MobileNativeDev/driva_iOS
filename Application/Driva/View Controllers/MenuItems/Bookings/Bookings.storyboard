@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yVB-zN-GZj">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Booking-->
+        <scene sceneID="uYQ-wH-HMV">
+            <objects>
+                <viewController storyboardIdentifier="BookingsViewController" id="DDH-ff-ivP" customClass="BookingsViewController" customModule="Driva" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ccc-P5-7yl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8BF-W3-bcx">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="BookingCell" rowHeight="70" id="KTn-QC-1hO" customClass="BookingCell" customModule="Driva" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KTn-QC-1hO" id="Hky-15-NJy">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="69.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-Mechanic" translatesAutoresizingMaskIntoConstraints="NO" id="8bL-DY-Vh8">
+                                                    <rect key="frame" x="20" y="20" width="29.666666666666671" height="29.666666666666671"/>
+                                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="8bL-DY-Vh8" secondAttribute="height" multiplier="1:1" id="BuG-iA-TaP"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6K-qQ-UjE">
+                                                    <rect key="frame" x="69.666666666666671" y="17" width="252.33333333333331" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl3-7i-q5V">
+                                                    <rect key="frame" x="69.666666666666671" y="37" width="252.33333333333331" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Nl3-7i-q5V" firstAttribute="top" secondItem="u6K-qQ-UjE" secondAttribute="bottom" constant="2" id="R8h-Cf-luh"/>
+                                                <constraint firstItem="8bL-DY-Vh8" firstAttribute="leading" secondItem="Hky-15-NJy" secondAttribute="leading" constant="20" id="RqN-fS-Qg5"/>
+                                                <constraint firstAttribute="trailing" secondItem="u6K-qQ-UjE" secondAttribute="trailing" constant="20" id="U5t-Su-gLu"/>
+                                                <constraint firstItem="u6K-qQ-UjE" firstAttribute="leading" secondItem="8bL-DY-Vh8" secondAttribute="trailing" constant="20" id="Un8-6Y-Faz"/>
+                                                <constraint firstItem="u6K-qQ-UjE" firstAttribute="bottom" secondItem="Hky-15-NJy" secondAttribute="centerY" id="aAx-fR-W9j"/>
+                                                <constraint firstItem="8bL-DY-Vh8" firstAttribute="top" secondItem="Hky-15-NJy" secondAttribute="top" constant="20" id="h3c-Au-GHl"/>
+                                                <constraint firstAttribute="bottom" secondItem="8bL-DY-Vh8" secondAttribute="bottom" constant="20" id="k6j-6Y-6en"/>
+                                                <constraint firstItem="Nl3-7i-q5V" firstAttribute="leading" secondItem="8bL-DY-Vh8" secondAttribute="trailing" constant="20" id="oip-73-BfV"/>
+                                                <constraint firstAttribute="trailing" secondItem="Nl3-7i-q5V" secondAttribute="trailing" constant="20" id="uxV-KY-1HB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgAvatar" destination="8bL-DY-Vh8" id="uEu-UA-wQ8"/>
+                                            <outlet property="lblStatus" destination="Nl3-7i-q5V" id="WGg-4R-AMp"/>
+                                            <outlet property="lblTitle" destination="u6K-qQ-UjE" id="MBi-tp-YcZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="DDH-ff-ivP" id="cvf-b4-1d0"/>
+                                    <outlet property="delegate" destination="DDH-ff-ivP" id="YMy-2h-Zk3"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8BF-W3-bcx" firstAttribute="leading" secondItem="ccc-P5-7yl" secondAttribute="leading" id="8UZ-vP-cDr"/>
+                            <constraint firstItem="8BF-W3-bcx" firstAttribute="top" secondItem="Nc0-B7-SLI" secondAttribute="top" id="LA0-7R-kgh"/>
+                            <constraint firstItem="Nc0-B7-SLI" firstAttribute="trailing" secondItem="8BF-W3-bcx" secondAttribute="trailing" id="qYP-qb-xuX"/>
+                            <constraint firstItem="Nc0-B7-SLI" firstAttribute="bottom" secondItem="8BF-W3-bcx" secondAttribute="bottom" id="w4p-uj-pYx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nc0-B7-SLI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Booking" id="9Kg-3J-Fmg">
+                        <barButtonItem key="leftBarButtonItem" image="navigation_bar_icon_menu" id="mwM-fF-Hfd">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnMenuPressed:" destination="DDH-ff-ivP" id="lXS-Gy-049"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="M3v-03-ePM">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnAddPressed:" destination="DDH-ff-ivP" id="Izz-m7-XNV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2n5-tS-Mhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205.5999999999999" y="-62.068965517241381"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9qW-pi-x7v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yVB-zN-GZj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4i8-dT-SiF" customClass="DrivaNavigationBar" customModule="Driva" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DDH-ff-ivP" kind="relationship" relationship="rootViewController" id="NaF-Ia-geB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebP-ec-ZKn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="412" y="-61.619190404797607"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-Mechanic" width="35" height="35"/>
+        <image name="navigation_bar_icon_menu" width="32" height="20"/>
+    </resources>
+</document>

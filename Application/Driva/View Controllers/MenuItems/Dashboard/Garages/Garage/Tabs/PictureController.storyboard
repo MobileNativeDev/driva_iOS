@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Picture View Controller-->
+        <scene sceneID="dDQ-V8-8Ih">
+            <objects>
+                <viewController storyboardIdentifier="PictureViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="PND-Od-DAN" customClass="PictureViewController" customModule="Driva" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sie-vy-FEZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1e5-Gl-2Yx">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="41Z-Tl-NI0"/>
+                                    <constraint firstAttribute="height" constant="100" id="ehG-Ll-xII"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="1e5-Gl-2Yx" firstAttribute="centerX" secondItem="Sie-vy-FEZ" secondAttribute="centerX" id="nOC-eQ-iNg"/>
+                            <constraint firstItem="1e5-Gl-2Yx" firstAttribute="centerY" secondItem="Sie-vy-FEZ" secondAttribute="centerY" id="oNl-98-DDz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Iha-41-Z2b"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Hdb-8f-s6Q" appends="YES" id="7jM-6j-v0J"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="cnstrImageHeight" destination="ehG-Ll-xII" id="ejF-yy-DKP"/>
+                        <outlet property="cnstrImageWidth" destination="41Z-Tl-NI0" id="sjU-VB-kbk"/>
+                        <outlet property="imgContent" destination="1e5-Gl-2Yx" id="wCd-kG-2cV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41U-on-MNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Hdb-8f-s6Q">
+                    <connections>
+                        <action selector="tapAction:" destination="PND-Od-DAN" id="ZzD-ns-Xzk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-134" y="206"/>
+        </scene>
+    </scenes>
+</document>

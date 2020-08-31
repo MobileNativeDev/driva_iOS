@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Upload Photo-->
+        <scene sceneID="a2R-v6-Oam">
+            <objects>
+                <viewController storyboardIdentifier="PhotoEditViewController" id="IoQ-2J-hJJ" customClass="PhotoEditViewController" customModule="Driva" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T1V-1R-i3d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Circle area is preview of your Profile Image" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdn-92-FDU">
+                                <rect key="frame" x="40" y="128" width="295" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqL-TW-PUD">
+                                <rect key="frame" x="0.0" y="165.99999999999997" width="375" height="480.33333333333326"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xmi-3Y-c54">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="480"/>
+                                    </containerView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xmi-3Y-c54" firstAttribute="leading" secondItem="EqL-TW-PUD" secondAttribute="leading" id="1IS-xh-I3E"/>
+                                    <constraint firstItem="Xmi-3Y-c54" firstAttribute="top" secondItem="EqL-TW-PUD" secondAttribute="top" id="2Lx-Wk-LTb"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xmi-3Y-c54" secondAttribute="trailing" id="Cfu-za-yOP"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xmi-3Y-c54" secondAttribute="bottom" id="zCQ-at-CBq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPa-Q6-I7P">
+                                <rect key="frame" x="0.0" y="738" width="375" height="74"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="slF-rM-qL2">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyj-LL-tt1">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="kp8-3N-75F"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" image="photoedit_icon_picture"/>
+                                                <connections>
+                                                    <action selector="btnPicturePressed:" destination="IoQ-2J-hJJ" eventType="touchUpInside" id="Gd6-vP-Oos"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEs-zb-pSJ">
+                                                <rect key="frame" x="79.666666666666671" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="zKD-aj-PSx"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" image="photoedit_icon_crop"/>
+                                                <connections>
+                                                    <action selector="btnCropPressed:" destination="IoQ-2J-hJJ" eventType="touchUpInside" id="BdF-ik-N5f"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEB-Gl-iOH">
+                                                <rect key="frame" x="159.66666666666666" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="xM5-C7-cAl"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" image="photoedit_icon_reset"/>
+                                                <connections>
+                                                    <action selector="btnResetPressed:" destination="IoQ-2J-hJJ" eventType="touchUpInside" id="v2u-Bc-tT6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjN-lI-2Zs">
+                                                <rect key="frame" x="239.33333333333337" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="x1X-29-UeA"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" image="photoedit_icon_pencil"/>
+                                                <connections>
+                                                    <action selector="btnPencilPressed:" destination="IoQ-2J-hJJ" eventType="touchUpInside" id="Kf8-P1-zAd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHM-kS-dwf">
+                                                <rect key="frame" x="319" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="aVy-z4-Jjd"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                                <state key="normal" image="photoedit_icon_share"/>
+                                                <connections>
+                                                    <action selector="btnSharePressed:" destination="IoQ-2J-hJJ" eventType="touchUpInside" id="sdC-co-5wI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="slF-rM-qL2" secondAttribute="trailing" constant="8" id="Q4q-qZ-lpM"/>
+                                    <constraint firstItem="slF-rM-qL2" firstAttribute="top" secondItem="QPa-Q6-I7P" secondAttribute="top" id="vuY-mt-ncv"/>
+                                    <constraint firstItem="slF-rM-qL2" firstAttribute="leading" secondItem="QPa-Q6-I7P" secondAttribute="leading" constant="8" id="xIg-jp-OcF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QPa-Q6-I7P" secondAttribute="bottom" id="1qV-vc-x0s"/>
+                            <constraint firstItem="EqL-TW-PUD" firstAttribute="centerY" secondItem="T1V-1R-i3d" secondAttribute="centerY" id="4Ox-Jd-Wk5"/>
+                            <constraint firstItem="Bdn-92-FDU" firstAttribute="centerX" secondItem="T1V-1R-i3d" secondAttribute="centerX" id="5La-9u-Yo8"/>
+                            <constraint firstItem="QPa-Q6-I7P" firstAttribute="leading" secondItem="T1V-1R-i3d" secondAttribute="leading" id="MkT-Pi-6Tq"/>
+                            <constraint firstItem="EqL-TW-PUD" firstAttribute="leading" secondItem="rEw-fP-Mzi" secondAttribute="leading" id="NG4-Hq-qX4"/>
+                            <constraint firstItem="rEw-fP-Mzi" firstAttribute="trailing" secondItem="Bdn-92-FDU" secondAttribute="trailing" constant="40" id="OsQ-jk-UOP"/>
+                            <constraint firstItem="EqL-TW-PUD" firstAttribute="top" secondItem="Bdn-92-FDU" secondAttribute="bottom" constant="20" id="Sqw-Ft-135"/>
+                            <constraint firstItem="rEw-fP-Mzi" firstAttribute="trailing" secondItem="EqL-TW-PUD" secondAttribute="trailing" id="UU7-mF-5Oo"/>
+                            <constraint firstItem="Bdn-92-FDU" firstAttribute="leading" secondItem="rEw-fP-Mzi" secondAttribute="leading" constant="40" id="XOK-uN-l36"/>
+                            <constraint firstItem="Bdn-92-FDU" firstAttribute="top" secondItem="rEw-fP-Mzi" secondAttribute="top" constant="40" id="Z6s-Eb-eBl"/>
+                            <constraint firstItem="slF-rM-qL2" firstAttribute="bottom" secondItem="rEw-fP-Mzi" secondAttribute="bottom" id="aQJ-Wu-Kyu"/>
+                            <constraint firstItem="rEw-fP-Mzi" firstAttribute="bottom" secondItem="QPa-Q6-I7P" secondAttribute="top" constant="40" id="oEb-EG-IwF"/>
+                            <constraint firstAttribute="trailing" secondItem="QPa-Q6-I7P" secondAttribute="trailing" id="qrz-yi-7ac"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rEw-fP-Mzi"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upload Photo" id="0rb-lw-9Fv">
+                        <barButtonItem key="rightBarButtonItem" image="navigation_bar_icon_confirm" id="Upk-Dc-0U7">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnConfirmPressed:" destination="IoQ-2J-hJJ" id="n30-KV-K9Z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cropContainer" destination="Xmi-3Y-c54" id="mdL-Dg-s1J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JIX-dh-aba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-169" y="166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="navigation_bar_icon_confirm" width="20" height="20"/>
+        <image name="photoedit_icon_crop" width="64" height="64"/>
+        <image name="photoedit_icon_pencil" width="32" height="32"/>
+        <image name="photoedit_icon_picture" width="64" height="64"/>
+        <image name="photoedit_icon_reset" width="64" height="64"/>
+        <image name="photoedit_icon_share" width="64" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AdapterView" customModule="Driva" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uzo-kY-ZvD">
+                    <rect key="frame" x="12" y="12" width="51" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Uzo-kY-ZvD" secondAttribute="height" multiplier="1:1" id="41i-EQ-QJa"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="BMW 8 Concept" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="fUn-Gj-uCw">
+                    <rect key="frame" x="75" y="19.5" width="208" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="8 Concept" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="if2-ir-Eia">
+                    <rect key="frame" x="75" y="39.5" width="208" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7U-pV-zf2">
+                    <rect key="frame" x="291" y="21" width="76" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="2" maxX="10" maxY="2"/>
+                    <state key="normal" title="CONNECT">
+                        <color key="titleColor" red="0.66666666669999997" green="0.18039215689999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.66666666669999997" green="0.18039215689999999" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnConnectPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="2Am-6i-bhf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fUn-Gj-uCw" firstAttribute="leading" secondItem="Uzo-kY-ZvD" secondAttribute="trailing" constant="12" id="4wn-6h-2tf"/>
+                <constraint firstItem="if2-ir-Eia" firstAttribute="leading" secondItem="Uzo-kY-ZvD" secondAttribute="trailing" constant="12" id="AaS-ul-glz"/>
+                <constraint firstItem="fUn-Gj-uCw" firstAttribute="bottom" secondItem="Uzo-kY-ZvD" secondAttribute="centerY" id="JGE-Wv-zdt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V7U-pV-zf2" secondAttribute="trailing" constant="8" id="Kcu-tH-1Wn"/>
+                <constraint firstItem="Uzo-kY-ZvD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="N6o-EP-T82"/>
+                <constraint firstItem="Uzo-kY-ZvD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="e3z-Yy-dy6"/>
+                <constraint firstItem="Uzo-kY-ZvD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="fBN-0O-f0m"/>
+                <constraint firstItem="V7U-pV-zf2" firstAttribute="leading" secondItem="if2-ir-Eia" secondAttribute="trailing" constant="8" id="hkZ-1I-yRf"/>
+                <constraint firstItem="V7U-pV-zf2" firstAttribute="leading" secondItem="fUn-Gj-uCw" secondAttribute="trailing" constant="8" id="tTG-qi-6ol"/>
+                <constraint firstItem="V7U-pV-zf2" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.45" id="yRO-aW-bJC"/>
+                <constraint firstItem="V7U-pV-zf2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ycU-mF-d0D"/>
+                <constraint firstItem="if2-ir-Eia" firstAttribute="top" secondItem="fUn-Gj-uCw" secondAttribute="bottom" constant="2" id="yuA-xh-w6Y"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                    <color key="value" white="0.84852120535714282" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imgLogo" destination="Uzo-kY-ZvD" id="02Y-nz-y8M"/>
+                <outlet property="lblStatus" destination="if2-ir-Eia" id="1zp-cU-mD2"/>
+                <outlet property="lblTitle" destination="fUn-Gj-uCw" id="hFT-ej-NAo"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="-251.5"/>
+        </view>
+    </objects>
+</document>

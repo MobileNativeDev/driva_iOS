@@ -1,0 +1,2020 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7900D7D5212AB2EB0065A30D /* AddVehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7900D7D4212AB2EB0065A30D /* AddVehicle.storyboard */; };
+		7900D7D7212AB2FA0065A30D /* SearchVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7D6212AB2FA0065A30D /* SearchVehicleViewController.swift */; };
+		7900D7DA212AB6890065A30D /* PlateNumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7D9212AB6890065A30D /* PlateNumberField.swift */; };
+		7900D7DD212AC0CB0065A30D /* SearchVehiclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7DC212AC0CB0065A30D /* SearchVehiclePresenter.swift */; };
+		7900D7DF212AC0ED0065A30D /* SearchVehicleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7DE212AC0ED0065A30D /* SearchVehicleConfigurator.swift */; };
+		7900D7E1212AC1060065A30D /* SearchVehicleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7E0212AC1060065A30D /* SearchVehicleRouter.swift */; };
+		7900D7E4212AC19E0065A30D /* AddVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7E3212AC19E0065A30D /* AddVehicleViewController.swift */; };
+		7900D7E6212AC1AA0065A30D /* AddVehicleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7E5212AC1AA0065A30D /* AddVehicleConfigurator.swift */; };
+		7900D7E8212AC1B60065A30D /* AddVehiclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7E7212AC1B60065A30D /* AddVehiclePresenter.swift */; };
+		7900D7EA212AC1C40065A30D /* AddVehicleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7900D7E9212AC1C40065A30D /* AddVehicleRouter.swift */; };
+		791FDF5A211C8B43009403C0 /* DiagnosticPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FDF59211C8B43009403C0 /* DiagnosticPresenter.swift */; };
+		791FDF5C211C8B50009403C0 /* DiagnosticRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FDF5B211C8B50009403C0 /* DiagnosticRouter.swift */; };
+		791FDF5E211C8B66009403C0 /* DiagnosticConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791FDF5D211C8B66009403C0 /* DiagnosticConfigurator.swift */; };
+		791FDF60211C8B7D009403C0 /* Diagnostic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791FDF5F211C8B7D009403C0 /* Diagnostic.storyboard */; };
+		792A740D212C1AF7002BD12F /* ConnectNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792A740C212C1AF7002BD12F /* ConnectNavigationController.swift */; };
+		792A740F212C3548002BD12F /* AdapterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 792A740E212C3548002BD12F /* AdapterView.xib */; };
+		792A7411212C35F0002BD12F /* ConnectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792A7410212C35F0002BD12F /* ConnectView.swift */; };
+		7934280B2137EF670013F407 /* GarageTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7934280A2137EF670013F407 /* GarageTypesViewController.swift */; };
+		7934280D2137F35A0013F407 /* GarageTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7934280C2137F35A0013F407 /* GarageTypeCell.swift */; };
+		793428102138094D0013F407 /* UpgradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7934280F2138094D0013F407 /* UpgradeViewController.swift */; };
+		793428122138124D0013F407 /* Upgrade.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793428112138124D0013F407 /* Upgrade.storyboard */; };
+		79342814213822520013F407 /* NavigationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79342813213822520013F407 /* NavigationMode.swift */; };
+		7934281621382A900013F407 /* UpgradeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7934281521382A900013F407 /* UpgradeNavigationController.swift */; };
+		7934281921382D110013F407 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7934281821382D110013F407 /* NotificationsViewController.swift */; };
+		7934281B21382D540013F407 /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7934281A21382D540013F407 /* Notifications.storyboard */; };
+		7934281D213832BD0013F407 /* NotificationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7934281C213832BD0013F407 /* NotificationsPresenter.swift */; };
+		7934281F213832C80013F407 /* NotificationsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7934281E213832C80013F407 /* NotificationsConfigurator.swift */; };
+		79342821213832CE0013F407 /* NotificationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79342820213832CE0013F407 /* NotificationsRouter.swift */; };
+		793428232138363D0013F407 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793428222138363D0013F407 /* NotificationCell.swift */; };
+		793B1AFC2119E954004EC55E /* ProblemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793B1AFB2119E954004EC55E /* ProblemCell.xib */; };
+		793E82952121763300DEAA71 /* VehicleTemperatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793E82942121763300DEAA71 /* VehicleTemperatureCell.xib */; };
+		793E829821218FE400DEAA71 /* GarageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E829721218FE400DEAA71 /* GarageCell.swift */; };
+		793E829C2121C46700DEAA71 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793E829B2121C46700DEAA71 /* Account.storyboard */; };
+		793E829E2121C47400DEAA71 /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E829D2121C47400DEAA71 /* AccountPresenter.swift */; };
+		793E82A02121C47E00DEAA71 /* AccountConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E829F2121C47E00DEAA71 /* AccountConfigurator.swift */; };
+		793E82A22121C48A00DEAA71 /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E82A12121C48A00DEAA71 /* AccountRouter.swift */; };
+		793E82A42121D2B400DEAA71 /* GarageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793E82A32121D2B400DEAA71 /* GarageCell.xib */; };
+		793E82A82121D3F200DEAA71 /* FavoritesTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E82A72121D3F200DEAA71 /* FavoritesTab.swift */; };
+		793E82AA2121D42900DEAA71 /* FavoritesTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 793E82A92121D42900DEAA71 /* FavoritesTab.xib */; };
+		793E82AC2121DFC000DEAA71 /* AccountTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793E82AB2121DFC000DEAA71 /* AccountTabBar.swift */; };
+		793F8E2C212EEA5B00D740C0 /* Problems.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793F8E2B212EEA5B00D740C0 /* Problems.storyboard */; };
+		793F8E30212EEC8D00D740C0 /* ProblemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E2F212EEC8D00D740C0 /* ProblemsViewController.swift */; };
+		793F8E32212EEC9D00D740C0 /* ProblemsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E31212EEC9D00D740C0 /* ProblemsConfigurator.swift */; };
+		793F8E34212EECA800D740C0 /* ProblemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E33212EECA800D740C0 /* ProblemsPresenter.swift */; };
+		793F8E36212EECB400D740C0 /* ProblemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E35212EECB400D740C0 /* ProblemsRouter.swift */; };
+		793F8E39212EF69D00D740C0 /* ProblemsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E38212EF69D00D740C0 /* ProblemsNavigationController.swift */; };
+		793F8E3D212F072B00D740C0 /* ProblemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E3C212F072B00D740C0 /* ProblemDetailsViewController.swift */; };
+		793F8E3F212F073800D740C0 /* ProblemDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E3E212F073800D740C0 /* ProblemDetailsConfigurator.swift */; };
+		793F8E41212F074300D740C0 /* ProblemDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E40212F074300D740C0 /* ProblemDetailsPresenter.swift */; };
+		793F8E43212F075300D740C0 /* ProblemDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793F8E42212F075300D740C0 /* ProblemDetailsRouter.swift */; };
+		794021CC211984180039ED49 /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794021CB211984180039ED49 /* Vehicle.storyboard */; };
+		794021CE211984A30039ED49 /* VehicleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794021CD211984A30039ED49 /* VehicleConfigurator.swift */; };
+		794021D0211984AC0039ED49 /* VehiclePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794021CF211984AC0039ED49 /* VehiclePresenter.swift */; };
+		794021D2211984F10039ED49 /* VehicleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794021D1211984F10039ED49 /* VehicleRouter.swift */; };
+		794021D4211985000039ED49 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794021D3211985000039ED49 /* BaseViewController.swift */; };
+		79443AEA211999C9000A8591 /* VehicleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79443AE9211999C9000A8591 /* VehicleTabBar.swift */; };
+		79443AF22119D5D6000A8591 /* StatisticTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79443AF12119D5D6000A8591 /* StatisticTab.xib */; };
+		79443AF42119D5E9000A8591 /* StatisticTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79443AF32119D5E9000A8591 /* StatisticTab.swift */; };
+		79443AF72119D72F000A8591 /* ProblemTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79443AF62119D72F000A8591 /* ProblemTab.xib */; };
+		79443AF92119D73A000A8591 /* ProblemTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79443AF82119D73A000A8591 /* ProblemTab.swift */; };
+		79443AFB2119D744000A8591 /* VehicleHistoryTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79443AFA2119D744000A8591 /* VehicleHistoryTab.swift */; };
+		79443AFD2119D751000A8591 /* VehicleHistoryTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79443AFC2119D751000A8591 /* VehicleHistoryTab.xib */; };
+		79443AFF2119D767000A8591 /* ProfileTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79443AFE2119D767000A8591 /* ProfileTab.xib */; };
+		79443B012119D777000A8591 /* ProfileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79443B002119D777000A8591 /* ProfileTab.swift */; };
+		79443B032119D7E7000A8591 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79443B022119D7E7000A8591 /* UIView.swift */; };
+		794491A921352B37007D6B76 /* BookingApprovalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491A821352B37007D6B76 /* BookingApprovalViewController.swift */; };
+		794491AC21353763007D6B76 /* Bookings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794491AB21353763007D6B76 /* Bookings.storyboard */; };
+		794491AE21353875007D6B76 /* BookingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491AD21353875007D6B76 /* BookingsViewController.swift */; };
+		794491B02135388E007D6B76 /* BookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491AF2135388E007D6B76 /* BookingCell.swift */; };
+		794491B22135389A007D6B76 /* BookingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491B12135389A007D6B76 /* BookingsConfigurator.swift */; };
+		794491B4213538B1007D6B76 /* BookingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491B3213538B1007D6B76 /* BookingsPresenter.swift */; };
+		794491B6213538BB007D6B76 /* BookingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491B5213538BB007D6B76 /* BookingsRouter.swift */; };
+		794491B921355164007D6B76 /* SelectProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491B821355164007D6B76 /* SelectProblemViewController.swift */; };
+		794491BB21355170007D6B76 /* SelectProblemConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491BA21355170007D6B76 /* SelectProblemConfigurator.swift */; };
+		794491BD2135517E007D6B76 /* SelectProblemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491BC2135517E007D6B76 /* SelectProblemPresenter.swift */; };
+		794491BF21355187007D6B76 /* SelectProblemRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491BE21355187007D6B76 /* SelectProblemRouter.swift */; };
+		794491C1213557FA007D6B76 /* ProblemCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491C0213557FA007D6B76 /* ProblemCategoryCell.swift */; };
+		794491C421359D81007D6B76 /* SelectDate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 794491C321359D81007D6B76 /* SelectDate.storyboard */; };
+		794491C621359D90007D6B76 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491C521359D90007D6B76 /* SelectViewController.swift */; };
+		794491C821359DDF007D6B76 /* SelectDateConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491C721359DDF007D6B76 /* SelectDateConfigurator.swift */; };
+		794491CA21359DF1007D6B76 /* SelectDatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491C921359DF1007D6B76 /* SelectDatePresenter.swift */; };
+		794491CC21359DFC007D6B76 /* SelectDateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491CB21359DFC007D6B76 /* SelectDateRouter.swift */; };
+		794491CE2135A0F1007D6B76 /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794491CD2135A0F1007D6B76 /* DateCell.swift */; };
+		7945A7222125680500506FFD /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7945A7212125680500506FFD /* Settings.storyboard */; };
+		7945A7242125682500506FFD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7232125682500506FFD /* SettingsViewController.swift */; };
+		7945A7262125683100506FFD /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7252125683100506FFD /* SettingsConfigurator.swift */; };
+		7945A7282125683B00506FFD /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7272125683B00506FFD /* SettingsPresenter.swift */; };
+		7945A72A2125684500506FFD /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7292125684500506FFD /* SettingsRouter.swift */; };
+		7945A72F2125BF5000506FFD /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7945A72E2125BF5000506FFD /* OnBoarding.storyboard */; };
+		7945A7312125C38100506FFD /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7302125C38100506FFD /* OnBoardingViewController.swift */; };
+		7945A7332125C39900506FFD /* OnBoardingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7322125C39900506FFD /* OnBoardingPresenter.swift */; };
+		7945A7352125C3A500506FFD /* OnBoardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7342125C3A500506FFD /* OnBoardingRouter.swift */; };
+		7945A7372125C3B100506FFD /* OnBoardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7362125C3B100506FFD /* OnBoardingConfigurator.swift */; };
+		7945A7392125C65200506FFD /* OnBoardingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945A7382125C65200506FFD /* OnBoardingCell.swift */; };
+		7946975C21198F0F007FB92D /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7946975B21198F0F007FB92D /* VehicleCell.swift */; };
+		7946975E211990D5007FB92D /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7946975D211990D5007FB92D /* Vehicle.swift */; };
+		794BA2CC2122EFC4001ABB52 /* GarageProfileTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794BA2CB2122EFC4001ABB52 /* GarageProfileTab.xib */; };
+		794BA2CE2122F011001ABB52 /* GarageProfileTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BA2CD2122F011001ABB52 /* GarageProfileTab.swift */; };
+		794BA2D0212316DE001ABB52 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BA2CF212316DE001ABB52 /* Constants.swift */; };
+		794BA2D2212319C0001ABB52 /* GarageGalleryTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794BA2D1212319C0001ABB52 /* GarageGalleryTab.xib */; };
+		794BA2D4212319CE001ABB52 /* GarageGalleryTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BA2D3212319CE001ABB52 /* GarageGalleryTab.swift */; };
+		794BA2D621232082001ABB52 /* GarageGalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BA2D521232082001ABB52 /* GarageGalleryCell.swift */; };
+		794BA2D8212320FF001ABB52 /* GarageGalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794BA2D7212320FF001ABB52 /* GarageGalleryCell.xib */; };
+		794BA2DA21232CAA001ABB52 /* AccountHistoryTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BA2D921232CAA001ABB52 /* AccountHistoryTab.swift */; };
+		794BA2DC21232CB8001ABB52 /* AccountHistoryTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794BA2DB21232CB8001ABB52 /* AccountHistoryTab.xib */; };
+		794BA2DF21232E87001ABB52 /* GarageHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BA2DE21232E87001ABB52 /* GarageHistoryCell.swift */; };
+		794BA2E121232E96001ABB52 /* GarageHistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 794BA2E021232E96001ABB52 /* GarageHistoryCell.xib */; };
+		7954B98D2126AE000053AE90 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7954B98C2126AE000053AE90 /* Login.storyboard */; };
+		7954B98F2126AEA90053AE90 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B98E2126AEA90053AE90 /* LoginViewController.swift */; };
+		7954B9912126AEB40053AE90 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9902126AEB40053AE90 /* LoginConfigurator.swift */; };
+		7954B9932126AEBB0053AE90 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9922126AEBB0053AE90 /* LoginPresenter.swift */; };
+		7954B9952126AEC30053AE90 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9942126AEC30053AE90 /* LoginRouter.swift */; };
+		7954B9982126C3D90053AE90 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7954B9972126C3D90053AE90 /* SignUp.storyboard */; };
+		7954B99A2126C3E50053AE90 /* SignUpStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9992126C3E50053AE90 /* SignUpStep1ViewController.swift */; };
+		7954B99E2126C4720053AE90 /* SignUpStep1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B99D2126C4720053AE90 /* SignUpStep1Presenter.swift */; };
+		7954B9A02126C47B0053AE90 /* SignUpStep1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B99F2126C47B0053AE90 /* SignUpStep1Router.swift */; };
+		7954B9A32126D2E60053AE90 /* SignUpStep1Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9A22126D2E50053AE90 /* SignUpStep1Configurator.swift */; };
+		7954B9A72126D3220053AE90 /* SignUpStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9A62126D3220053AE90 /* SignUpStep2ViewController.swift */; };
+		7954B9A92126D3320053AE90 /* SignUpStep2Configurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9A82126D3320053AE90 /* SignUpStep2Configurator.swift */; };
+		7954B9AB2126D33E0053AE90 /* SignUpStep2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9AA2126D33E0053AE90 /* SignUpStep2Presenter.swift */; };
+		7954B9AD2126D34A0053AE90 /* SignUpStep2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9AC2126D34A0053AE90 /* SignUpStep2Router.swift */; };
+		7954B9B12126ED820053AE90 /* PhotoEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7954B9B02126ED820053AE90 /* PhotoEdit.storyboard */; };
+		7954B9B32126ED8F0053AE90 /* PhotoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9B22126ED8F0053AE90 /* PhotoEditViewController.swift */; };
+		7954B9B52126ED9D0053AE90 /* PhotoEditConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9B42126ED9D0053AE90 /* PhotoEditConfigurator.swift */; };
+		7954B9B72126EDA70053AE90 /* PhotoEditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9B62126EDA70053AE90 /* PhotoEditPresenter.swift */; };
+		7954B9B92126EDB20053AE90 /* PhotoEditRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954B9B82126EDB20053AE90 /* PhotoEditRouter.swift */; };
+		7955520221395EB3003A3D27 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7955520121395EB3003A3D27 /* CropViewController.swift */; };
+		7955523321395ED3003A3D27 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955520621395ED2003A3D27 /* TOActivityCroppedImageProvider.m */; };
+		7955523421395ED3003A3D27 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955520821395ED2003A3D27 /* TOCroppedImageAttributes.m */; };
+		7955523521395ED3003A3D27 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955520A21395ED2003A3D27 /* TOCropViewControllerTransitioning.m */; };
+		7955523621395ED3003A3D27 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955520F21395ED2003A3D27 /* UIImage+CropRotate.m */; };
+		7955523821395ED3003A3D27 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955522621395ED3003A3D27 /* TOCropViewController.m */; };
+		7955523921395ED3003A3D27 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955522921395ED3003A3D27 /* TOCropOverlayView.m */; };
+		7955523A21395ED3003A3D27 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955522B21395ED3003A3D27 /* TOCropScrollView.m */; };
+		7955523C21395ED3003A3D27 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7955522F21395ED3003A3D27 /* TOCropView.m */; };
+		795CA952211D6C990044EFBF /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA951211D6C990044EFBF /* RoundedView.swift */; };
+		795CA954211D78D20044EFBF /* TabsCollectionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA953211D78D20044EFBF /* TabsCollectionBar.swift */; };
+		795CA956211D79A70044EFBF /* DiagnosticTabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA955211D79A70044EFBF /* DiagnosticTabCell.swift */; };
+		795CA959211DAA250044EFBF /* EngineTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA958211DAA250044EFBF /* EngineTab.swift */; };
+		795CA95B211DAA430044EFBF /* EngineTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 795CA95A211DAA430044EFBF /* EngineTab.xib */; };
+		795CA95F211DB3850044EFBF /* GaragesConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA95E211DB3850044EFBF /* GaragesConfigurator.swift */; };
+		795CA961211DB3900044EFBF /* GaragesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA960211DB3900044EFBF /* GaragesPresenter.swift */; };
+		795CA963211DB3A80044EFBF /* GaragesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA962211DB3A80044EFBF /* GaragesRouter.swift */; };
+		795CA965211DB3BB0044EFBF /* Garages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 795CA964211DB3BB0044EFBF /* Garages.storyboard */; };
+		795CA967211DB64F0044EFBF /* DrivaNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA966211DB64F0044EFBF /* DrivaNavigationBar.swift */; };
+		795CA96D211DD41E0044EFBF /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA96B211DD41E0044EFBF /* CircularProgress.swift */; };
+		795CA96E211DD41E0044EFBF /* CircularProgressContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA96C211DD41E0044EFBF /* CircularProgressContainer.swift */; };
+		795CA970211DE0430044EFBF /* VehicleTemperatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795CA96F211DE0430044EFBF /* VehicleTemperatureCell.swift */; };
+		79615F442133E5C10036CC86 /* ServiceDetailsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F432133E5C10036CC86 /* ServiceDetailsNavigationController.swift */; };
+		79615F472133EB580036CC86 /* Review.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79615F462133EB580036CC86 /* Review.storyboard */; };
+		79615F492133EB6E0036CC86 /* LeaveReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F482133EB6E0036CC86 /* LeaveReviewViewController.swift */; };
+		79615F4B2133EB870036CC86 /* LeaveReviewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F4A2133EB870036CC86 /* LeaveReviewConfigurator.swift */; };
+		79615F4D2133EC650036CC86 /* LeaveReviewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F4C2133EC650036CC86 /* LeaveReviewPresenter.swift */; };
+		79615F4F2133EC6D0036CC86 /* LeaveReviewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F4E2133EC6D0036CC86 /* LeaveReviewRouter.swift */; };
+		79615F512133F49B0036CC86 /* ServiceDetailHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79615F502133F49B0036CC86 /* ServiceDetailHeader.xib */; };
+		79615F532133F5160036CC86 /* ServiceDetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F522133F5160036CC86 /* ServiceDetailHeader.swift */; };
+		79615F5521340E1F0036CC86 /* ReviewSubmitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F5421340E1F0036CC86 /* ReviewSubmitionViewController.swift */; };
+		79615F5821342E590036CC86 /* BookingGarage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79615F5721342E590036CC86 /* BookingGarage.storyboard */; };
+		79615F5A21342EA40036CC86 /* BookingGarageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F5921342EA40036CC86 /* BookingGarageNavigationController.swift */; };
+		79615F5C21342F290036CC86 /* BookingGarageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F5B21342F290036CC86 /* BookingGarageViewController.swift */; };
+		79615F5E21342F360036CC86 /* BookingGarageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F5D21342F360036CC86 /* BookingGarageConfigurator.swift */; };
+		79615F6021342F3E0036CC86 /* BookingGaragePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F5F21342F3E0036CC86 /* BookingGaragePresenter.swift */; };
+		79615F6221342F460036CC86 /* BookingGarageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615F6121342F460036CC86 /* BookingGarageRouter.swift */; };
+		79A798AE2136A13500324C85 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A798AD2136A13500324C85 /* Date.swift */; };
+		79A798B02136CFB800324C85 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A798AF2136CFB800324C85 /* PictureViewController.swift */; };
+		79A798B22136CFD800324C85 /* PictureController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A798B12136CFD800324C85 /* PictureController.storyboard */; };
+		79A798B42136E7BC00324C85 /* SortViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A798B32136E7BC00324C85 /* SortViewController.swift */; };
+		79A798B62136ECF300324C85 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A798B52136ECF300324C85 /* FilterViewController.swift */; };
+		79A798B92136F87600324C85 /* FilterCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A798B82136F87600324C85 /* FilterCells.swift */; };
+		79DDC4F9212FF136009BBE7B /* ResetConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC4F8212FF136009BBE7B /* ResetConfirmationViewController.swift */; };
+		79DDC4FC213000D0009BBE7B /* ServiceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC4FB213000D0009BBE7B /* ServiceDetailsViewController.swift */; };
+		79DDC4FE213000D9009BBE7B /* ServiceDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC4FD213000D9009BBE7B /* ServiceDetailsPresenter.swift */; };
+		79DDC500213000E2009BBE7B /* ServiceDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC4FF213000E2009BBE7B /* ServiceDetailsConfigurator.swift */; };
+		79DDC502213000E9009BBE7B /* ServiceDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC501213000E9009BBE7B /* ServiceDetailsRouter.swift */; };
+		79DDC504213000F3009BBE7B /* ServiceDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79DDC503213000F3009BBE7B /* ServiceDetails.storyboard */; };
+		79DDC50B21300432009BBE7B /* ServiceDetailsWorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC50A21300432009BBE7B /* ServiceDetailsWorkCell.swift */; };
+		79DDC50D2130044B009BBE7B /* ServiceDetailsBookingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC50C2130044B009BBE7B /* ServiceDetailsBookingCell.swift */; };
+		79DDC50F21301794009BBE7B /* ServiceDetailsWorkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79DDC50E21301794009BBE7B /* ServiceDetailsWorkCell.xib */; };
+		79DDC511213017C9009BBE7B /* ServiceDetailsBookingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79DDC510213017C9009BBE7B /* ServiceDetailsBookingCell.xib */; };
+		79DDC51321302615009BBE7B /* ServiceDetailsGarageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC51221302615009BBE7B /* ServiceDetailsGarageCell.swift */; };
+		79DDC5152130262F009BBE7B /* ServiceDetailsVehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC5142130262F009BBE7B /* ServiceDetailsVehicleCell.swift */; };
+		79F48137212ACB3600D314D3 /* SuccessfullViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48136212ACB3600D314D3 /* SuccessfullViewController.swift */; };
+		79F48139212AD2AB00D314D3 /* AddVehicleNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48138212AD2AB00D314D3 /* AddVehicleNavigationController.swift */; };
+		79F4813B212ADE3A00D314D3 /* VehiclesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4813A212ADE3A00D314D3 /* VehiclesHelper.swift */; };
+		79F48141212AE1DD00D314D3 /* VehicleProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48140212AE1DD00D314D3 /* VehicleProfile.swift */; };
+		79F48144212B11D500D314D3 /* ConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48143212B11D500D314D3 /* ConnectViewController.swift */; };
+		79F48146212B11FE00D314D3 /* ConnectConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48145212B11FE00D314D3 /* ConnectConfigurator.swift */; };
+		79F48148212B120900D314D3 /* ConnectPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48147212B120900D314D3 /* ConnectPresenter.swift */; };
+		79F4814A212B121100D314D3 /* ConnectRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F48149212B121100D314D3 /* ConnectRouter.swift */; };
+		79F4814C212B12D700D314D3 /* Scan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F4814B212B12D700D314D3 /* Scan.storyboard */; };
+		79F4814E212B1F2100D314D3 /* SuccessConnectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4814D212B1F2100D314D3 /* SuccessConnectViewController.swift */; };
+		79F48150212B1FE400D314D3 /* SuccessConnectConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F4814F212B1FE400D314D3 /* SuccessConnectConfigurator.swift */; };
+		79F7C88D211AC45C0023E999 /* HistoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F7C88C211AC45C0023E999 /* HistoryCell.xib */; };
+		79F7C88F211AC46B0023E999 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F7C88E211AC46B0023E999 /* HistoryCell.swift */; };
+		79F844BE2119E211009E264A /* ProblemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F844BD2119E211009E264A /* ProblemCell.swift */; };
+		79F868E6212437F100599959 /* MenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868DF212437F100599959 /* MenuAnimator.swift */; };
+		79F868E7212437F100599959 /* MenuContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868E0212437F100599959 /* MenuContainerViewController.swift */; };
+		79F868E8212437F100599959 /* MenuTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868E1212437F100599959 /* MenuTransitioningDelegate.swift */; };
+		79F868E9212437F100599959 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868E2212437F100599959 /* MenuViewController.swift */; };
+		79F868EA212437F100599959 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868E3212437F100599959 /* Options.swift */; };
+		79F868EB212437F100599959 /* SideMenuItemContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868E4212437F100599959 /* SideMenuItemContent.swift */; };
+		79F868EC212437F100599959 /* SideMenuItemOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868E5212437F100599959 /* SideMenuItemOptions.swift */; };
+		79F868EF212439E600599959 /* DrivaMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868EE212439E600599959 /* DrivaMenuController.swift */; };
+		79F868F321243B8800599959 /* DrivaMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F868F221243B8800599959 /* DrivaMenu.storyboard */; };
+		79F868F621243D6600599959 /* HostMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868F521243D6600599959 /* HostMenuViewController.swift */; };
+		79F868F821243DBA00599959 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F868F721243DBA00599959 /* Dashboard.storyboard */; };
+		79F868FA21245F0C00599959 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868F921245F0C00599959 /* MenuCell.swift */; };
+		79F868FD212474DE00599959 /* ReviewsTab.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F868FC212474DE00599959 /* ReviewsTab.xib */; };
+		79F868FF2124756A00599959 /* ReviewsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F868FE2124756A00599959 /* ReviewsTab.swift */; };
+		79F869012124766100599959 /* ReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F869002124766100599959 /* ReviewCell.swift */; };
+		79F8690321247E6400599959 /* ReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79F8690221247E6400599959 /* ReviewCell.xib */; };
+		79FE534921384B1600ACB7F5 /* SuccessConnectorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE534821384B1600ACB7F5 /* SuccessConnectorPresenter.swift */; };
+		79FE534B21384B6200ACB7F5 /* SuccessConnectorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FE534A21384B6200ACB7F5 /* SuccessConnectorRouter.swift */; };
+		79FF70FA2122BF7F0008E564 /* GarageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF70F92122BF7F0008E564 /* GarageViewController.swift */; };
+		79FF70FD2122BF9D0008E564 /* GarageConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF70FC2122BF9D0008E564 /* GarageConfigurator.swift */; };
+		79FF70FF2122BFA60008E564 /* GaragePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF70FE2122BFA60008E564 /* GaragePresenter.swift */; };
+		79FF71012122BFB10008E564 /* GarageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF71002122BFB10008E564 /* GarageRouter.swift */; };
+		79FF71032122CFB40008E564 /* Garage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF71022122CFB40008E564 /* Garage.swift */; };
+		79FF71052122DDC40008E564 /* GarageTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FF71042122DDC40008E564 /* GarageTabBar.swift */; };
+		8185D8652119101000413AF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185D8642119101000413AF7 /* AppDelegate.swift */; };
+		8185D8672119101000413AF7 /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185D8662119101000413AF7 /* VehicleViewController.swift */; };
+		8185D8692119101000413AF7 /* DiagnosticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185D8682119101000413AF7 /* DiagnosticViewController.swift */; };
+		8185D86C2119101000413AF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8185D86A2119101000413AF7 /* Main.storyboard */; };
+		8185D86E2119101100413AF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8185D86D2119101100413AF7 /* Assets.xcassets */; };
+		8185D8712119101100413AF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8185D86F2119101100413AF7 /* LaunchScreen.storyboard */; };
+		8185D87C2119101200413AF7 /* DrivaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185D87B2119101200413AF7 /* DrivaUITests.swift */; };
+		8185D8872119124600413AF7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185D8862119124500413AF7 /* AccountViewController.swift */; };
+		8185D88B211912A600413AF7 /* GaragesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8185D88A211912A600413AF7 /* GaragesViewController.swift */; };
+		90723BDE7086EE311DEA7FA3 /* Pods_DrivaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0298A2CCDD7209664E77A58 /* Pods_DrivaUITests.framework */; };
+		A545343B10513EB03FD8981A /* Pods_Driva.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE2DD5DC9C115BCA097E0D4E /* Pods_Driva.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8185D8782119101200413AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8185D8592119100F00413AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8185D8602119100F00413AF7;
+			remoteInfo = Driva;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08E8DEE05DCDE2DCA2A7364D /* Pods-DrivaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrivaUITests/Pods-DrivaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		21192024800587CA8E3B0A11 /* Pods-Driva.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driva.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Driva/Pods-Driva.debug.xcconfig"; sourceTree = "<group>"; };
+		7900D7D4212AB2EB0065A30D /* AddVehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddVehicle.storyboard; sourceTree = "<group>"; };
+		7900D7D6212AB2FA0065A30D /* SearchVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVehicleViewController.swift; sourceTree = "<group>"; };
+		7900D7D9212AB6890065A30D /* PlateNumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateNumberField.swift; sourceTree = "<group>"; };
+		7900D7DC212AC0CB0065A30D /* SearchVehiclePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVehiclePresenter.swift; sourceTree = "<group>"; };
+		7900D7DE212AC0ED0065A30D /* SearchVehicleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVehicleConfigurator.swift; sourceTree = "<group>"; };
+		7900D7E0212AC1060065A30D /* SearchVehicleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVehicleRouter.swift; sourceTree = "<group>"; };
+		7900D7E3212AC19E0065A30D /* AddVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleViewController.swift; sourceTree = "<group>"; };
+		7900D7E5212AC1AA0065A30D /* AddVehicleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleConfigurator.swift; sourceTree = "<group>"; };
+		7900D7E7212AC1B60065A30D /* AddVehiclePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehiclePresenter.swift; sourceTree = "<group>"; };
+		7900D7E9212AC1C40065A30D /* AddVehicleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleRouter.swift; sourceTree = "<group>"; };
+		791FDF59211C8B43009403C0 /* DiagnosticPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticPresenter.swift; sourceTree = "<group>"; };
+		791FDF5B211C8B50009403C0 /* DiagnosticRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticRouter.swift; sourceTree = "<group>"; };
+		791FDF5D211C8B66009403C0 /* DiagnosticConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticConfigurator.swift; sourceTree = "<group>"; };
+		791FDF5F211C8B7D009403C0 /* Diagnostic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diagnostic.storyboard; sourceTree = "<group>"; };
+		792A740C212C1AF7002BD12F /* ConnectNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectNavigationController.swift; sourceTree = "<group>"; };
+		792A740E212C3548002BD12F /* AdapterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdapterView.xib; sourceTree = "<group>"; };
+		792A7410212C35F0002BD12F /* ConnectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectView.swift; sourceTree = "<group>"; };
+		7934280A2137EF670013F407 /* GarageTypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTypesViewController.swift; sourceTree = "<group>"; };
+		7934280C2137F35A0013F407 /* GarageTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTypeCell.swift; sourceTree = "<group>"; };
+		7934280F2138094D0013F407 /* UpgradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeViewController.swift; sourceTree = "<group>"; };
+		793428112138124D0013F407 /* Upgrade.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Upgrade.storyboard; sourceTree = "<group>"; };
+		79342813213822520013F407 /* NavigationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMode.swift; sourceTree = "<group>"; };
+		7934281521382A900013F407 /* UpgradeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeNavigationController.swift; sourceTree = "<group>"; };
+		7934281821382D110013F407 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		7934281A21382D540013F407 /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
+		7934281C213832BD0013F407 /* NotificationsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPresenter.swift; sourceTree = "<group>"; };
+		7934281E213832C80013F407 /* NotificationsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsConfigurator.swift; sourceTree = "<group>"; };
+		79342820213832CE0013F407 /* NotificationsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsRouter.swift; sourceTree = "<group>"; };
+		793428222138363D0013F407 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		793B1AFB2119E954004EC55E /* ProblemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProblemCell.xib; sourceTree = "<group>"; };
+		793E82942121763300DEAA71 /* VehicleTemperatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTemperatureCell.xib; sourceTree = "<group>"; };
+		793E829721218FE400DEAA71 /* GarageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageCell.swift; sourceTree = "<group>"; };
+		793E829B2121C46700DEAA71 /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
+		793E829D2121C47400DEAA71 /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		793E829F2121C47E00DEAA71 /* AccountConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountConfigurator.swift; sourceTree = "<group>"; };
+		793E82A12121C48A00DEAA71 /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
+		793E82A32121D2B400DEAA71 /* GarageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarageCell.xib; sourceTree = "<group>"; };
+		793E82A72121D3F200DEAA71 /* FavoritesTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTab.swift; sourceTree = "<group>"; };
+		793E82A92121D42900DEAA71 /* FavoritesTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTab.xib; sourceTree = "<group>"; };
+		793E82AB2121DFC000DEAA71 /* AccountTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTabBar.swift; sourceTree = "<group>"; };
+		793F8E2B212EEA5B00D740C0 /* Problems.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Problems.storyboard; sourceTree = "<group>"; };
+		793F8E2F212EEC8D00D740C0 /* ProblemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemsViewController.swift; sourceTree = "<group>"; };
+		793F8E31212EEC9D00D740C0 /* ProblemsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemsConfigurator.swift; sourceTree = "<group>"; };
+		793F8E33212EECA800D740C0 /* ProblemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemsPresenter.swift; sourceTree = "<group>"; };
+		793F8E35212EECB400D740C0 /* ProblemsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemsRouter.swift; sourceTree = "<group>"; };
+		793F8E38212EF69D00D740C0 /* ProblemsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemsNavigationController.swift; sourceTree = "<group>"; };
+		793F8E3C212F072B00D740C0 /* ProblemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemDetailsViewController.swift; sourceTree = "<group>"; };
+		793F8E3E212F073800D740C0 /* ProblemDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemDetailsConfigurator.swift; sourceTree = "<group>"; };
+		793F8E40212F074300D740C0 /* ProblemDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemDetailsPresenter.swift; sourceTree = "<group>"; };
+		793F8E42212F075300D740C0 /* ProblemDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemDetailsRouter.swift; sourceTree = "<group>"; };
+		794021CB211984180039ED49 /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
+		794021CD211984A30039ED49 /* VehicleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleConfigurator.swift; sourceTree = "<group>"; };
+		794021CF211984AC0039ED49 /* VehiclePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclePresenter.swift; sourceTree = "<group>"; };
+		794021D1211984F10039ED49 /* VehicleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleRouter.swift; sourceTree = "<group>"; };
+		794021D3211985000039ED49 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		79443AE9211999C9000A8591 /* VehicleTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTabBar.swift; sourceTree = "<group>"; };
+		79443AF12119D5D6000A8591 /* StatisticTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticTab.xib; sourceTree = "<group>"; };
+		79443AF32119D5E9000A8591 /* StatisticTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticTab.swift; sourceTree = "<group>"; };
+		79443AF62119D72F000A8591 /* ProblemTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProblemTab.xib; sourceTree = "<group>"; };
+		79443AF82119D73A000A8591 /* ProblemTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemTab.swift; sourceTree = "<group>"; };
+		79443AFA2119D744000A8591 /* VehicleHistoryTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleHistoryTab.swift; sourceTree = "<group>"; };
+		79443AFC2119D751000A8591 /* VehicleHistoryTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleHistoryTab.xib; sourceTree = "<group>"; };
+		79443AFE2119D767000A8591 /* ProfileTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTab.xib; sourceTree = "<group>"; };
+		79443B002119D777000A8591 /* ProfileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTab.swift; sourceTree = "<group>"; };
+		79443B022119D7E7000A8591 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		794491A821352B37007D6B76 /* BookingApprovalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingApprovalViewController.swift; sourceTree = "<group>"; };
+		794491AB21353763007D6B76 /* Bookings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Bookings.storyboard; sourceTree = "<group>"; };
+		794491AD21353875007D6B76 /* BookingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsViewController.swift; sourceTree = "<group>"; };
+		794491AF2135388E007D6B76 /* BookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCell.swift; sourceTree = "<group>"; };
+		794491B12135389A007D6B76 /* BookingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsConfigurator.swift; sourceTree = "<group>"; };
+		794491B3213538B1007D6B76 /* BookingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsPresenter.swift; sourceTree = "<group>"; };
+		794491B5213538BB007D6B76 /* BookingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsRouter.swift; sourceTree = "<group>"; };
+		794491B821355164007D6B76 /* SelectProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProblemViewController.swift; sourceTree = "<group>"; };
+		794491BA21355170007D6B76 /* SelectProblemConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProblemConfigurator.swift; sourceTree = "<group>"; };
+		794491BC2135517E007D6B76 /* SelectProblemPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProblemPresenter.swift; sourceTree = "<group>"; };
+		794491BE21355187007D6B76 /* SelectProblemRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectProblemRouter.swift; sourceTree = "<group>"; };
+		794491C0213557FA007D6B76 /* ProblemCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemCategoryCell.swift; sourceTree = "<group>"; };
+		794491C321359D81007D6B76 /* SelectDate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectDate.storyboard; sourceTree = "<group>"; };
+		794491C521359D90007D6B76 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		794491C721359DDF007D6B76 /* SelectDateConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateConfigurator.swift; sourceTree = "<group>"; };
+		794491C921359DF1007D6B76 /* SelectDatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDatePresenter.swift; sourceTree = "<group>"; };
+		794491CB21359DFC007D6B76 /* SelectDateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDateRouter.swift; sourceTree = "<group>"; };
+		794491CD2135A0F1007D6B76 /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		7945A7212125680500506FFD /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		7945A7232125682500506FFD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7945A7252125683100506FFD /* SettingsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		7945A7272125683B00506FFD /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		7945A7292125684500506FFD /* SettingsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		7945A72E2125BF5000506FFD /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		7945A7302125C38100506FFD /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		7945A7322125C39900506FFD /* OnBoardingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPresenter.swift; sourceTree = "<group>"; };
+		7945A7342125C3A500506FFD /* OnBoardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingRouter.swift; sourceTree = "<group>"; };
+		7945A7362125C3B100506FFD /* OnBoardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingConfigurator.swift; sourceTree = "<group>"; };
+		7945A7382125C65200506FFD /* OnBoardingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCell.swift; sourceTree = "<group>"; };
+		7946975B21198F0F007FB92D /* VehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
+		7946975D211990D5007FB92D /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		794BA2CB2122EFC4001ABB52 /* GarageProfileTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarageProfileTab.xib; sourceTree = "<group>"; };
+		794BA2CD2122F011001ABB52 /* GarageProfileTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageProfileTab.swift; sourceTree = "<group>"; };
+		794BA2CF212316DE001ABB52 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		794BA2D1212319C0001ABB52 /* GarageGalleryTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarageGalleryTab.xib; sourceTree = "<group>"; };
+		794BA2D3212319CE001ABB52 /* GarageGalleryTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageGalleryTab.swift; sourceTree = "<group>"; };
+		794BA2D521232082001ABB52 /* GarageGalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageGalleryCell.swift; sourceTree = "<group>"; };
+		794BA2D7212320FF001ABB52 /* GarageGalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarageGalleryCell.xib; sourceTree = "<group>"; };
+		794BA2D921232CAA001ABB52 /* AccountHistoryTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHistoryTab.swift; sourceTree = "<group>"; };
+		794BA2DB21232CB8001ABB52 /* AccountHistoryTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountHistoryTab.xib; sourceTree = "<group>"; };
+		794BA2DE21232E87001ABB52 /* GarageHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageHistoryCell.swift; sourceTree = "<group>"; };
+		794BA2E021232E96001ABB52 /* GarageHistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GarageHistoryCell.xib; sourceTree = "<group>"; };
+		7954B98C2126AE000053AE90 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		7954B98E2126AEA90053AE90 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7954B9902126AEB40053AE90 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		7954B9922126AEBB0053AE90 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		7954B9942126AEC30053AE90 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		7954B9972126C3D90053AE90 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		7954B9992126C3E50053AE90 /* SignUpStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep1ViewController.swift; sourceTree = "<group>"; };
+		7954B99D2126C4720053AE90 /* SignUpStep1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep1Presenter.swift; sourceTree = "<group>"; };
+		7954B99F2126C47B0053AE90 /* SignUpStep1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep1Router.swift; sourceTree = "<group>"; };
+		7954B9A22126D2E50053AE90 /* SignUpStep1Configurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpStep1Configurator.swift; sourceTree = "<group>"; };
+		7954B9A62126D3220053AE90 /* SignUpStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep2ViewController.swift; sourceTree = "<group>"; };
+		7954B9A82126D3320053AE90 /* SignUpStep2Configurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep2Configurator.swift; sourceTree = "<group>"; };
+		7954B9AA2126D33E0053AE90 /* SignUpStep2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep2Presenter.swift; sourceTree = "<group>"; };
+		7954B9AC2126D34A0053AE90 /* SignUpStep2Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpStep2Router.swift; sourceTree = "<group>"; };
+		7954B9B02126ED820053AE90 /* PhotoEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotoEdit.storyboard; sourceTree = "<group>"; };
+		7954B9B22126ED8F0053AE90 /* PhotoEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditViewController.swift; sourceTree = "<group>"; };
+		7954B9B42126ED9D0053AE90 /* PhotoEditConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditConfigurator.swift; sourceTree = "<group>"; };
+		7954B9B62126EDA70053AE90 /* PhotoEditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditPresenter.swift; sourceTree = "<group>"; };
+		7954B9B82126EDB20053AE90 /* PhotoEditRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditRouter.swift; sourceTree = "<group>"; };
+		7955520121395EB3003A3D27 /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
+		7955520321395ED1003A3D27 /* Driva-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Driva-Bridging-Header.h"; sourceTree = "<group>"; };
+		7955520521395ED2003A3D27 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
+		7955520621395ED2003A3D27 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
+		7955520721395ED2003A3D27 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCroppedImageAttributes.h; sourceTree = "<group>"; };
+		7955520821395ED2003A3D27 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCroppedImageAttributes.m; sourceTree = "<group>"; };
+		7955520921395ED2003A3D27 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
+		7955520A21395ED2003A3D27 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
+		7955520C21395ED2003A3D27 /* TOCropViewConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewConstants.h; sourceTree = "<group>"; };
+		7955520E21395ED2003A3D27 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		7955520F21395ED2003A3D27 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		7955522621395ED3003A3D27 /* TOCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropViewController.m; sourceTree = "<group>"; };
+		7955522821395ED3003A3D27 /* TOCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropOverlayView.h; sourceTree = "<group>"; };
+		7955522921395ED3003A3D27 /* TOCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropOverlayView.m; sourceTree = "<group>"; };
+		7955522A21395ED3003A3D27 /* TOCropScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropScrollView.h; sourceTree = "<group>"; };
+		7955522B21395ED3003A3D27 /* TOCropScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropScrollView.m; sourceTree = "<group>"; };
+		7955522E21395ED3003A3D27 /* TOCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropView.h; sourceTree = "<group>"; };
+		7955522F21395ED3003A3D27 /* TOCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOCropView.m; sourceTree = "<group>"; };
+		7955523021395ED3003A3D27 /* TOCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOCropViewController.h; sourceTree = "<group>"; };
+		795CA951211D6C990044EFBF /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		795CA953211D78D20044EFBF /* TabsCollectionBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsCollectionBar.swift; sourceTree = "<group>"; };
+		795CA955211D79A70044EFBF /* DiagnosticTabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticTabCell.swift; sourceTree = "<group>"; };
+		795CA958211DAA250044EFBF /* EngineTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineTab.swift; sourceTree = "<group>"; };
+		795CA95A211DAA430044EFBF /* EngineTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EngineTab.xib; sourceTree = "<group>"; };
+		795CA95E211DB3850044EFBF /* GaragesConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaragesConfigurator.swift; sourceTree = "<group>"; };
+		795CA960211DB3900044EFBF /* GaragesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaragesPresenter.swift; sourceTree = "<group>"; };
+		795CA962211DB3A80044EFBF /* GaragesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaragesRouter.swift; sourceTree = "<group>"; };
+		795CA964211DB3BB0044EFBF /* Garages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Garages.storyboard; sourceTree = "<group>"; };
+		795CA966211DB64F0044EFBF /* DrivaNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivaNavigationBar.swift; sourceTree = "<group>"; };
+		795CA96B211DD41E0044EFBF /* CircularProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		795CA96C211DD41E0044EFBF /* CircularProgressContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressContainer.swift; sourceTree = "<group>"; };
+		795CA96F211DE0430044EFBF /* VehicleTemperatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTemperatureCell.swift; sourceTree = "<group>"; };
+		79615F432133E5C10036CC86 /* ServiceDetailsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsNavigationController.swift; sourceTree = "<group>"; };
+		79615F462133EB580036CC86 /* Review.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Review.storyboard; sourceTree = "<group>"; };
+		79615F482133EB6E0036CC86 /* LeaveReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveReviewViewController.swift; sourceTree = "<group>"; };
+		79615F4A2133EB870036CC86 /* LeaveReviewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveReviewConfigurator.swift; sourceTree = "<group>"; };
+		79615F4C2133EC650036CC86 /* LeaveReviewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveReviewPresenter.swift; sourceTree = "<group>"; };
+		79615F4E2133EC6D0036CC86 /* LeaveReviewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveReviewRouter.swift; sourceTree = "<group>"; };
+		79615F502133F49B0036CC86 /* ServiceDetailHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailHeader.xib; sourceTree = "<group>"; };
+		79615F522133F5160036CC86 /* ServiceDetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailHeader.swift; sourceTree = "<group>"; };
+		79615F5421340E1F0036CC86 /* ReviewSubmitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewSubmitionViewController.swift; sourceTree = "<group>"; };
+		79615F5721342E590036CC86 /* BookingGarage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookingGarage.storyboard; sourceTree = "<group>"; };
+		79615F5921342EA40036CC86 /* BookingGarageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingGarageNavigationController.swift; sourceTree = "<group>"; };
+		79615F5B21342F290036CC86 /* BookingGarageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingGarageViewController.swift; sourceTree = "<group>"; };
+		79615F5D21342F360036CC86 /* BookingGarageConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingGarageConfigurator.swift; sourceTree = "<group>"; };
+		79615F5F21342F3E0036CC86 /* BookingGaragePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingGaragePresenter.swift; sourceTree = "<group>"; };
+		79615F6121342F460036CC86 /* BookingGarageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingGarageRouter.swift; sourceTree = "<group>"; };
+		79A798AD2136A13500324C85 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		79A798AF2136CFB800324C85 /* PictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		79A798B12136CFD800324C85 /* PictureController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PictureController.storyboard; sourceTree = "<group>"; };
+		79A798B32136E7BC00324C85 /* SortViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortViewController.swift; sourceTree = "<group>"; };
+		79A798B52136ECF300324C85 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		79A798B82136F87600324C85 /* FilterCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCells.swift; sourceTree = "<group>"; };
+		79DDC4F8212FF136009BBE7B /* ResetConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetConfirmationViewController.swift; sourceTree = "<group>"; };
+		79DDC4FB213000D0009BBE7B /* ServiceDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsViewController.swift; sourceTree = "<group>"; };
+		79DDC4FD213000D9009BBE7B /* ServiceDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsPresenter.swift; sourceTree = "<group>"; };
+		79DDC4FF213000E2009BBE7B /* ServiceDetailsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsConfigurator.swift; sourceTree = "<group>"; };
+		79DDC501213000E9009BBE7B /* ServiceDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsRouter.swift; sourceTree = "<group>"; };
+		79DDC503213000F3009BBE7B /* ServiceDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ServiceDetails.storyboard; sourceTree = "<group>"; };
+		79DDC50A21300432009BBE7B /* ServiceDetailsWorkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsWorkCell.swift; sourceTree = "<group>"; };
+		79DDC50C2130044B009BBE7B /* ServiceDetailsBookingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsBookingCell.swift; sourceTree = "<group>"; };
+		79DDC50E21301794009BBE7B /* ServiceDetailsWorkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailsWorkCell.xib; sourceTree = "<group>"; };
+		79DDC510213017C9009BBE7B /* ServiceDetailsBookingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDetailsBookingCell.xib; sourceTree = "<group>"; };
+		79DDC51221302615009BBE7B /* ServiceDetailsGarageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsGarageCell.swift; sourceTree = "<group>"; };
+		79DDC5142130262F009BBE7B /* ServiceDetailsVehicleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDetailsVehicleCell.swift; sourceTree = "<group>"; };
+		79F48136212ACB3600D314D3 /* SuccessfullViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfullViewController.swift; sourceTree = "<group>"; };
+		79F48138212AD2AB00D314D3 /* AddVehicleNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddVehicleNavigationController.swift; sourceTree = "<group>"; };
+		79F4813A212ADE3A00D314D3 /* VehiclesHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesHelper.swift; sourceTree = "<group>"; };
+		79F48140212AE1DD00D314D3 /* VehicleProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleProfile.swift; sourceTree = "<group>"; };
+		79F48143212B11D500D314D3 /* ConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectViewController.swift; sourceTree = "<group>"; };
+		79F48145212B11FE00D314D3 /* ConnectConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectConfigurator.swift; sourceTree = "<group>"; };
+		79F48147212B120900D314D3 /* ConnectPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectPresenter.swift; sourceTree = "<group>"; };
+		79F48149212B121100D314D3 /* ConnectRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectRouter.swift; sourceTree = "<group>"; };
+		79F4814B212B12D700D314D3 /* Scan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scan.storyboard; sourceTree = "<group>"; };
+		79F4814D212B1F2100D314D3 /* SuccessConnectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessConnectViewController.swift; sourceTree = "<group>"; };
+		79F4814F212B1FE400D314D3 /* SuccessConnectConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessConnectConfigurator.swift; sourceTree = "<group>"; };
+		79F7C88C211AC45C0023E999 /* HistoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryCell.xib; sourceTree = "<group>"; };
+		79F7C88E211AC46B0023E999 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		79F844BD2119E211009E264A /* ProblemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemCell.swift; sourceTree = "<group>"; };
+		79F868DF212437F100599959 /* MenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuAnimator.swift; sourceTree = "<group>"; };
+		79F868E0212437F100599959 /* MenuContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuContainerViewController.swift; sourceTree = "<group>"; };
+		79F868E1212437F100599959 /* MenuTransitioningDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitioningDelegate.swift; sourceTree = "<group>"; };
+		79F868E2212437F100599959 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		79F868E3212437F100599959 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		79F868E4212437F100599959 /* SideMenuItemContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuItemContent.swift; sourceTree = "<group>"; };
+		79F868E5212437F100599959 /* SideMenuItemOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuItemOptions.swift; sourceTree = "<group>"; };
+		79F868EE212439E600599959 /* DrivaMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivaMenuController.swift; sourceTree = "<group>"; };
+		79F868F221243B8800599959 /* DrivaMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrivaMenu.storyboard; sourceTree = "<group>"; };
+		79F868F521243D6600599959 /* HostMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostMenuViewController.swift; sourceTree = "<group>"; };
+		79F868F721243DBA00599959 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		79F868F921245F0C00599959 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		79F868FC212474DE00599959 /* ReviewsTab.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewsTab.xib; sourceTree = "<group>"; };
+		79F868FE2124756A00599959 /* ReviewsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsTab.swift; sourceTree = "<group>"; };
+		79F869002124766100599959 /* ReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewCell.swift; sourceTree = "<group>"; };
+		79F8690221247E6400599959 /* ReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewCell.xib; sourceTree = "<group>"; };
+		79FE534821384B1600ACB7F5 /* SuccessConnectorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessConnectorPresenter.swift; sourceTree = "<group>"; };
+		79FE534A21384B6200ACB7F5 /* SuccessConnectorRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccessConnectorRouter.swift; sourceTree = "<group>"; };
+		79FF70F92122BF7F0008E564 /* GarageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageViewController.swift; sourceTree = "<group>"; };
+		79FF70FC2122BF9D0008E564 /* GarageConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageConfigurator.swift; sourceTree = "<group>"; };
+		79FF70FE2122BFA60008E564 /* GaragePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaragePresenter.swift; sourceTree = "<group>"; };
+		79FF71002122BFB10008E564 /* GarageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageRouter.swift; sourceTree = "<group>"; };
+		79FF71022122CFB40008E564 /* Garage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Garage.swift; sourceTree = "<group>"; };
+		79FF71042122DDC40008E564 /* GarageTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageTabBar.swift; sourceTree = "<group>"; };
+		8185D8612119100F00413AF7 /* Driva.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Driva.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8185D8642119101000413AF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8185D8662119101000413AF7 /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
+		8185D8682119101000413AF7 /* DiagnosticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticViewController.swift; sourceTree = "<group>"; };
+		8185D86B2119101000413AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8185D86D2119101100413AF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8185D8702119101100413AF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8185D8722119101200413AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8185D8772119101200413AF7 /* DrivaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrivaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8185D87B2119101200413AF7 /* DrivaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivaUITests.swift; sourceTree = "<group>"; };
+		8185D87D2119101200413AF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8185D8862119124500413AF7 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		8185D88A211912A600413AF7 /* GaragesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaragesViewController.swift; sourceTree = "<group>"; };
+		93658D16C127DC777EC0A75A /* Pods-DrivaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrivaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrivaUITests/Pods-DrivaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E0298A2CCDD7209664E77A58 /* Pods_DrivaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrivaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B8710415E164E32E2C894A /* Pods-Driva.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Driva.release.xcconfig"; path = "Pods/Target Support Files/Pods-Driva/Pods-Driva.release.xcconfig"; sourceTree = "<group>"; };
+		FE2DD5DC9C115BCA097E0D4E /* Pods_Driva.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Driva.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8185D85E2119100F00413AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A545343B10513EB03FD8981A /* Pods_Driva.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8185D8742119101200413AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90723BDE7086EE311DEA7FA3 /* Pods_DrivaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7900D7D3212AAF720065A30D /* AddVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				7900D7D4212AB2EB0065A30D /* AddVehicle.storyboard */,
+				79F48138212AD2AB00D314D3 /* AddVehicleNavigationController.swift */,
+				7900D7DB212AC0B30065A30D /* SearchVehicle */,
+				7900D7E2212AC1770065A30D /* AddVehicle */,
+				79F48135212ACB1400D314D3 /* Successfull */,
+			);
+			path = AddVehicle;
+			sourceTree = "<group>";
+		};
+		7900D7D8212AB6690065A30D /* PlateNumberField */ = {
+			isa = PBXGroup;
+			children = (
+				7900D7D9212AB6890065A30D /* PlateNumberField.swift */,
+			);
+			path = PlateNumberField;
+			sourceTree = "<group>";
+		};
+		7900D7DB212AC0B30065A30D /* SearchVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				7900D7D6212AB2FA0065A30D /* SearchVehicleViewController.swift */,
+				7900D7DE212AC0ED0065A30D /* SearchVehicleConfigurator.swift */,
+				7900D7DC212AC0CB0065A30D /* SearchVehiclePresenter.swift */,
+				7900D7E0212AC1060065A30D /* SearchVehicleRouter.swift */,
+			);
+			path = SearchVehicle;
+			sourceTree = "<group>";
+		};
+		7900D7E2212AC1770065A30D /* AddVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				7900D7E3212AC19E0065A30D /* AddVehicleViewController.swift */,
+				7900D7E5212AC1AA0065A30D /* AddVehicleConfigurator.swift */,
+				7900D7E7212AC1B60065A30D /* AddVehiclePresenter.swift */,
+				7900D7E9212AC1C40065A30D /* AddVehicleRouter.swift */,
+			);
+			path = AddVehicle;
+			sourceTree = "<group>";
+		};
+		791FDF58211C8B1C009403C0 /* Diagnostic */ = {
+			isa = PBXGroup;
+			children = (
+				795CA957211DA9B30044EFBF /* Tabs */,
+				791FDF5F211C8B7D009403C0 /* Diagnostic.storyboard */,
+				8185D8682119101000413AF7 /* DiagnosticViewController.swift */,
+				791FDF5D211C8B66009403C0 /* DiagnosticConfigurator.swift */,
+				791FDF59211C8B43009403C0 /* DiagnosticPresenter.swift */,
+				791FDF5B211C8B50009403C0 /* DiagnosticRouter.swift */,
+				79F48142212B112E00D314D3 /* Scan */,
+			);
+			path = Diagnostic;
+			sourceTree = "<group>";
+		};
+		792A7406212BF1C6002BD12F /* Connect */ = {
+			isa = PBXGroup;
+			children = (
+				79F48143212B11D500D314D3 /* ConnectViewController.swift */,
+				79F48145212B11FE00D314D3 /* ConnectConfigurator.swift */,
+				79F48147212B120900D314D3 /* ConnectPresenter.swift */,
+				79F48149212B121100D314D3 /* ConnectRouter.swift */,
+				792A740E212C3548002BD12F /* AdapterView.xib */,
+				792A7410212C35F0002BD12F /* ConnectView.swift */,
+			);
+			path = Connect;
+			sourceTree = "<group>";
+		};
+		792A7407212BF1E3002BD12F /* SuccessConnector */ = {
+			isa = PBXGroup;
+			children = (
+				79FE534A21384B6200ACB7F5 /* SuccessConnectorRouter.swift */,
+				79FE534821384B1600ACB7F5 /* SuccessConnectorPresenter.swift */,
+				79F4814D212B1F2100D314D3 /* SuccessConnectViewController.swift */,
+				79F4814F212B1FE400D314D3 /* SuccessConnectConfigurator.swift */,
+			);
+			path = SuccessConnector;
+			sourceTree = "<group>";
+		};
+		7934280E213809180013F407 /* Upgrade */ = {
+			isa = PBXGroup;
+			children = (
+				793428112138124D0013F407 /* Upgrade.storyboard */,
+				7934280F2138094D0013F407 /* UpgradeViewController.swift */,
+				7934281521382A900013F407 /* UpgradeNavigationController.swift */,
+			);
+			path = Upgrade;
+			sourceTree = "<group>";
+		};
+		7934281721382CE20013F407 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				7934281A21382D540013F407 /* Notifications.storyboard */,
+				7934281821382D110013F407 /* NotificationsViewController.swift */,
+				7934281E213832C80013F407 /* NotificationsConfigurator.swift */,
+				7934281C213832BD0013F407 /* NotificationsPresenter.swift */,
+				79342820213832CE0013F407 /* NotificationsRouter.swift */,
+				793428222138363D0013F407 /* NotificationCell.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		793E8296212179C100DEAA71 /* VehicleTemperatureCell */ = {
+			isa = PBXGroup;
+			children = (
+				795CA96F211DE0430044EFBF /* VehicleTemperatureCell.swift */,
+				793E82942121763300DEAA71 /* VehicleTemperatureCell.xib */,
+			);
+			path = VehicleTemperatureCell;
+			sourceTree = "<group>";
+		};
+		793E82A52121D2B800DEAA71 /* GarageCell */ = {
+			isa = PBXGroup;
+			children = (
+				793E82A32121D2B400DEAA71 /* GarageCell.xib */,
+				793E829721218FE400DEAA71 /* GarageCell.swift */,
+			);
+			path = GarageCell;
+			sourceTree = "<group>";
+		};
+		793E82A62121D3DF00DEAA71 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				793E82AB2121DFC000DEAA71 /* AccountTabBar.swift */,
+				79F868F121243A2800599959 /* FavoritesTab */,
+				79F868F021243A1900599959 /* AccountHistoryTab */,
+				79F868FB2124749100599959 /* ReviewsTab */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		793F8E2A212EEA3100D740C0 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				793F8E2B212EEA5B00D740C0 /* Problems.storyboard */,
+				793F8E38212EF69D00D740C0 /* ProblemsNavigationController.swift */,
+				79DDC4F8212FF136009BBE7B /* ResetConfirmationViewController.swift */,
+				793F8E3A212F06BC00D740C0 /* ProblemsList */,
+				793F8E3B212F06D000D740C0 /* ProblemDetails */,
+			);
+			path = Problems;
+			sourceTree = "<group>";
+		};
+		793F8E37212EF0F500D740C0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				793B1AFB2119E954004EC55E /* ProblemCell.xib */,
+				79F844BD2119E211009E264A /* ProblemCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		793F8E3A212F06BC00D740C0 /* ProblemsList */ = {
+			isa = PBXGroup;
+			children = (
+				793F8E2F212EEC8D00D740C0 /* ProblemsViewController.swift */,
+				793F8E31212EEC9D00D740C0 /* ProblemsConfigurator.swift */,
+				793F8E33212EECA800D740C0 /* ProblemsPresenter.swift */,
+				793F8E35212EECB400D740C0 /* ProblemsRouter.swift */,
+			);
+			path = ProblemsList;
+			sourceTree = "<group>";
+		};
+		793F8E3B212F06D000D740C0 /* ProblemDetails */ = {
+			isa = PBXGroup;
+			children = (
+				793F8E3C212F072B00D740C0 /* ProblemDetailsViewController.swift */,
+				793F8E3E212F073800D740C0 /* ProblemDetailsConfigurator.swift */,
+				793F8E40212F074300D740C0 /* ProblemDetailsPresenter.swift */,
+				793F8E42212F075300D740C0 /* ProblemDetailsRouter.swift */,
+			);
+			path = ProblemDetails;
+			sourceTree = "<group>";
+		};
+		794021C9211983ED0039ED49 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				79F868F721243DBA00599959 /* Dashboard.storyboard */,
+				794021CA211984030039ED49 /* Vehicle */,
+				791FDF58211C8B1C009403C0 /* Diagnostic */,
+				795CA95C211DB3430044EFBF /* Garages */,
+				795CA95D211DB3690044EFBF /* Account */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		794021CA211984030039ED49 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				794021CB211984180039ED49 /* Vehicle.storyboard */,
+				8185D8662119101000413AF7 /* VehicleViewController.swift */,
+				794021CD211984A30039ED49 /* VehicleConfigurator.swift */,
+				794021CF211984AC0039ED49 /* VehiclePresenter.swift */,
+				794021D1211984F10039ED49 /* VehicleRouter.swift */,
+				7946975B21198F0F007FB92D /* VehicleCell.swift */,
+				79443AE9211999C9000A8591 /* VehicleTabBar.swift */,
+				79443AF02119D5B9000A8591 /* Tabs */,
+				7900D7D3212AAF720065A30D /* AddVehicle */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		79443AE82119996F000A8591 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7946975D211990D5007FB92D /* Vehicle.swift */,
+				79FF71022122CFB40008E564 /* Garage.swift */,
+				79F48140212AE1DD00D314D3 /* VehicleProfile.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79443AF02119D5B9000A8591 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				79F7C889211AC42E0023E999 /* Statistic */,
+				79F7C888211AC4250023E999 /* Problems */,
+				79F7C88A211AC4350023E999 /* History */,
+				79F7C88B211AC43C0023E999 /* Profile */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		79443AF52119D6ED000A8591 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79443B022119D7E7000A8591 /* UIView.swift */,
+				79A798AD2136A13500324C85 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		794491A721352B13007D6B76 /* Book Mechanic */ = {
+			isa = PBXGroup;
+			children = (
+				79615F5B21342F290036CC86 /* BookingGarageViewController.swift */,
+				79615F5D21342F360036CC86 /* BookingGarageConfigurator.swift */,
+				79615F5F21342F3E0036CC86 /* BookingGaragePresenter.swift */,
+				79615F6121342F460036CC86 /* BookingGarageRouter.swift */,
+			);
+			path = "Book Mechanic";
+			sourceTree = "<group>";
+		};
+		794491AA21353750007D6B76 /* Bookings */ = {
+			isa = PBXGroup;
+			children = (
+				794491AB21353763007D6B76 /* Bookings.storyboard */,
+				794491AD21353875007D6B76 /* BookingsViewController.swift */,
+				794491B12135389A007D6B76 /* BookingsConfigurator.swift */,
+				794491B3213538B1007D6B76 /* BookingsPresenter.swift */,
+				794491B5213538BB007D6B76 /* BookingsRouter.swift */,
+				794491AF2135388E007D6B76 /* BookingCell.swift */,
+			);
+			path = Bookings;
+			sourceTree = "<group>";
+		};
+		794491B721355145007D6B76 /* SelectProblem */ = {
+			isa = PBXGroup;
+			children = (
+				794491B821355164007D6B76 /* SelectProblemViewController.swift */,
+				794491BA21355170007D6B76 /* SelectProblemConfigurator.swift */,
+				794491BC2135517E007D6B76 /* SelectProblemPresenter.swift */,
+				794491BE21355187007D6B76 /* SelectProblemRouter.swift */,
+				794491C0213557FA007D6B76 /* ProblemCategoryCell.swift */,
+			);
+			path = SelectProblem;
+			sourceTree = "<group>";
+		};
+		794491C221359D5A007D6B76 /* SelectDate */ = {
+			isa = PBXGroup;
+			children = (
+				794491C321359D81007D6B76 /* SelectDate.storyboard */,
+				794491C521359D90007D6B76 /* SelectViewController.swift */,
+				794491C721359DDF007D6B76 /* SelectDateConfigurator.swift */,
+				794491C921359DF1007D6B76 /* SelectDatePresenter.swift */,
+				794491CB21359DFC007D6B76 /* SelectDateRouter.swift */,
+				794491CD2135A0F1007D6B76 /* DateCell.swift */,
+			);
+			path = SelectDate;
+			sourceTree = "<group>";
+		};
+		7945A71F212567E100506FFD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				7945A7212125680500506FFD /* Settings.storyboard */,
+				7945A7232125682500506FFD /* SettingsViewController.swift */,
+				7945A7252125683100506FFD /* SettingsConfigurator.swift */,
+				7945A7272125683B00506FFD /* SettingsPresenter.swift */,
+				7945A7292125684500506FFD /* SettingsRouter.swift */,
+				7934280E213809180013F407 /* Upgrade */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		7945A72D2125BED800506FFD /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				7945A72E2125BF5000506FFD /* OnBoarding.storyboard */,
+				7945A7302125C38100506FFD /* OnBoardingViewController.swift */,
+				7945A7362125C3B100506FFD /* OnBoardingConfigurator.swift */,
+				7945A7322125C39900506FFD /* OnBoardingPresenter.swift */,
+				7945A7342125C3A500506FFD /* OnBoardingRouter.swift */,
+				7945A7382125C65200506FFD /* OnBoardingCell.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		794BA2CA2122EF9B001ABB52 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				79FF71042122DDC40008E564 /* GarageTabBar.swift */,
+				794BA2CB2122EFC4001ABB52 /* GarageProfileTab.xib */,
+				794BA2CD2122F011001ABB52 /* GarageProfileTab.swift */,
+				794BA2DD21232E1D001ABB52 /* GarageGallery */,
+				79A798AF2136CFB800324C85 /* PictureViewController.swift */,
+				79A798B12136CFD800324C85 /* PictureController.storyboard */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		794BA2DD21232E1D001ABB52 /* GarageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				794BA2D1212319C0001ABB52 /* GarageGalleryTab.xib */,
+				794BA2D3212319CE001ABB52 /* GarageGalleryTab.swift */,
+				794BA2D7212320FF001ABB52 /* GarageGalleryCell.xib */,
+				794BA2D521232082001ABB52 /* GarageGalleryCell.swift */,
+			);
+			path = GarageGallery;
+			sourceTree = "<group>";
+		};
+		7954B98A2126ADCB0053AE90 /* MenuItems */ = {
+			isa = PBXGroup;
+			children = (
+				794021C9211983ED0039ED49 /* Dashboard */,
+				794491AA21353750007D6B76 /* Bookings */,
+				7945A71F212567E100506FFD /* Settings */,
+				7934281721382CE20013F407 /* Notifications */,
+			);
+			path = MenuItems;
+			sourceTree = "<group>";
+		};
+		7954B98B2126ADE90053AE90 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				7954B98C2126AE000053AE90 /* Login.storyboard */,
+				7954B98E2126AEA90053AE90 /* LoginViewController.swift */,
+				7954B9902126AEB40053AE90 /* LoginConfigurator.swift */,
+				7954B9922126AEBB0053AE90 /* LoginPresenter.swift */,
+				7954B9942126AEC30053AE90 /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		7954B9962126C3C80053AE90 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7954B9972126C3D90053AE90 /* SignUp.storyboard */,
+				7954B9A42126D2FE0053AE90 /* Step1 */,
+				7954B9A52126D3050053AE90 /* Step2 */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7954B9A42126D2FE0053AE90 /* Step1 */ = {
+			isa = PBXGroup;
+			children = (
+				7954B9992126C3E50053AE90 /* SignUpStep1ViewController.swift */,
+				7954B9A22126D2E50053AE90 /* SignUpStep1Configurator.swift */,
+				7954B99D2126C4720053AE90 /* SignUpStep1Presenter.swift */,
+				7954B99F2126C47B0053AE90 /* SignUpStep1Router.swift */,
+			);
+			path = Step1;
+			sourceTree = "<group>";
+		};
+		7954B9A52126D3050053AE90 /* Step2 */ = {
+			isa = PBXGroup;
+			children = (
+				7954B9A62126D3220053AE90 /* SignUpStep2ViewController.swift */,
+				7954B9A82126D3320053AE90 /* SignUpStep2Configurator.swift */,
+				7954B9AA2126D33E0053AE90 /* SignUpStep2Presenter.swift */,
+				7954B9AC2126D34A0053AE90 /* SignUpStep2Router.swift */,
+			);
+			path = Step2;
+			sourceTree = "<group>";
+		};
+		7954B9AE2126ECE60053AE90 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7954B98B2126ADE90053AE90 /* Login */,
+				7954B9962126C3C80053AE90 /* SignUp */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7954B9AF2126ED740053AE90 /* PhotoEdit */ = {
+			isa = PBXGroup;
+			children = (
+				7955520021395E93003A3D27 /* CropController */,
+				7954B9B02126ED820053AE90 /* PhotoEdit.storyboard */,
+				7954B9B22126ED8F0053AE90 /* PhotoEditViewController.swift */,
+				7954B9B42126ED9D0053AE90 /* PhotoEditConfigurator.swift */,
+				7954B9B62126EDA70053AE90 /* PhotoEditPresenter.swift */,
+				7954B9B82126EDB20053AE90 /* PhotoEditRouter.swift */,
+			);
+			path = PhotoEdit;
+			sourceTree = "<group>";
+		};
+		7955520021395E93003A3D27 /* CropController */ = {
+			isa = PBXGroup;
+			children = (
+				7955520121395EB3003A3D27 /* CropViewController.swift */,
+				7955522721395ED3003A3D27 /* Views */,
+				7955520D21395ED2003A3D27 /* Categories */,
+				7955520B21395ED2003A3D27 /* Constants */,
+				7955520421395ED2003A3D27 /* Models */,
+				7955523021395ED3003A3D27 /* TOCropViewController.h */,
+				7955522621395ED3003A3D27 /* TOCropViewController.m */,
+			);
+			path = CropController;
+			sourceTree = "<group>";
+		};
+		7955520421395ED2003A3D27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7955520521395ED2003A3D27 /* TOActivityCroppedImageProvider.h */,
+				7955520621395ED2003A3D27 /* TOActivityCroppedImageProvider.m */,
+				7955520721395ED2003A3D27 /* TOCroppedImageAttributes.h */,
+				7955520821395ED2003A3D27 /* TOCroppedImageAttributes.m */,
+				7955520921395ED2003A3D27 /* TOCropViewControllerTransitioning.h */,
+				7955520A21395ED2003A3D27 /* TOCropViewControllerTransitioning.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7955520B21395ED2003A3D27 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				7955520C21395ED2003A3D27 /* TOCropViewConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		7955520D21395ED2003A3D27 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7955520E21395ED2003A3D27 /* UIImage+CropRotate.h */,
+				7955520F21395ED2003A3D27 /* UIImage+CropRotate.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		7955522721395ED3003A3D27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7955522821395ED3003A3D27 /* TOCropOverlayView.h */,
+				7955522921395ED3003A3D27 /* TOCropOverlayView.m */,
+				7955522A21395ED3003A3D27 /* TOCropScrollView.h */,
+				7955522B21395ED3003A3D27 /* TOCropScrollView.m */,
+				7955522E21395ED3003A3D27 /* TOCropView.h */,
+				7955522F21395ED3003A3D27 /* TOCropView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		795CA950211D6C360044EFBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				793F8E37212EF0F500D740C0 /* Cell */,
+				7900D7D8212AB6690065A30D /* PlateNumberField */,
+				79F868DE212437F100599959 /* SideMenu */,
+				795CA951211D6C990044EFBF /* RoundedView.swift */,
+				795CA966211DB64F0044EFBF /* DrivaNavigationBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		795CA957211DA9B30044EFBF /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				795CA953211D78D20044EFBF /* TabsCollectionBar.swift */,
+				795CA955211D79A70044EFBF /* DiagnosticTabCell.swift */,
+				795CA968211DD2920044EFBF /* EngineTab */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		795CA95C211DB3430044EFBF /* Garages */ = {
+			isa = PBXGroup;
+			children = (
+				795CA964211DB3BB0044EFBF /* Garages.storyboard */,
+				8185D88A211912A600413AF7 /* GaragesViewController.swift */,
+				795CA95E211DB3850044EFBF /* GaragesConfigurator.swift */,
+				795CA960211DB3900044EFBF /* GaragesPresenter.swift */,
+				795CA962211DB3A80044EFBF /* GaragesRouter.swift */,
+				79A798B72136ECFA00324C85 /* Search */,
+				79FF70FB2122BF840008E564 /* Garage */,
+				793E82A52121D2B800DEAA71 /* GarageCell */,
+				79615F5621342E3D0036CC86 /* BookingGarage */,
+			);
+			path = Garages;
+			sourceTree = "<group>";
+		};
+		795CA95D211DB3690044EFBF /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				793E82A62121D3DF00DEAA71 /* Tabs */,
+				793E829B2121C46700DEAA71 /* Account.storyboard */,
+				8185D8862119124500413AF7 /* AccountViewController.swift */,
+				793E829F2121C47E00DEAA71 /* AccountConfigurator.swift */,
+				793E829D2121C47400DEAA71 /* AccountPresenter.swift */,
+				793E82A12121C48A00DEAA71 /* AccountRouter.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		795CA968211DD2920044EFBF /* EngineTab */ = {
+			isa = PBXGroup;
+			children = (
+				795CA95A211DAA430044EFBF /* EngineTab.xib */,
+				795CA958211DAA250044EFBF /* EngineTab.swift */,
+				795CA96B211DD41E0044EFBF /* CircularProgress.swift */,
+				795CA96C211DD41E0044EFBF /* CircularProgressContainer.swift */,
+				793E8296212179C100DEAA71 /* VehicleTemperatureCell */,
+			);
+			path = EngineTab;
+			sourceTree = "<group>";
+		};
+		79615F452133EB450036CC86 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				79615F462133EB580036CC86 /* Review.storyboard */,
+				79615F482133EB6E0036CC86 /* LeaveReviewViewController.swift */,
+				79615F4A2133EB870036CC86 /* LeaveReviewConfigurator.swift */,
+				79615F4C2133EC650036CC86 /* LeaveReviewPresenter.swift */,
+				79615F4E2133EC6D0036CC86 /* LeaveReviewRouter.swift */,
+				79615F5421340E1F0036CC86 /* ReviewSubmitionViewController.swift */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		79615F5621342E3D0036CC86 /* BookingGarage */ = {
+			isa = PBXGroup;
+			children = (
+				79615F5721342E590036CC86 /* BookingGarage.storyboard */,
+				79615F5921342EA40036CC86 /* BookingGarageNavigationController.swift */,
+				794491A721352B13007D6B76 /* Book Mechanic */,
+				794491B721355145007D6B76 /* SelectProblem */,
+				794491C221359D5A007D6B76 /* SelectDate */,
+				794491A821352B37007D6B76 /* BookingApprovalViewController.swift */,
+			);
+			path = BookingGarage;
+			sourceTree = "<group>";
+		};
+		79A798B72136ECFA00324C85 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				79A798B32136E7BC00324C85 /* SortViewController.swift */,
+				79A798B52136ECF300324C85 /* FilterViewController.swift */,
+				79A798B82136F87600324C85 /* FilterCells.swift */,
+				7934280A2137EF670013F407 /* GarageTypesViewController.swift */,
+				7934280C2137F35A0013F407 /* GarageTypeCell.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		79DDC4FA213000AE009BBE7B /* ServiceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				79615F432133E5C10036CC86 /* ServiceDetailsNavigationController.swift */,
+				79DDC50521300325009BBE7B /* Cells */,
+				79DDC503213000F3009BBE7B /* ServiceDetails.storyboard */,
+				79DDC4FB213000D0009BBE7B /* ServiceDetailsViewController.swift */,
+				79DDC4FF213000E2009BBE7B /* ServiceDetailsConfigurator.swift */,
+				79DDC4FD213000D9009BBE7B /* ServiceDetailsPresenter.swift */,
+				79DDC501213000E9009BBE7B /* ServiceDetailsRouter.swift */,
+			);
+			path = ServiceDetails;
+			sourceTree = "<group>";
+		};
+		79DDC50521300325009BBE7B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79DDC51221302615009BBE7B /* ServiceDetailsGarageCell.swift */,
+				79DDC5142130262F009BBE7B /* ServiceDetailsVehicleCell.swift */,
+				79DDC50E21301794009BBE7B /* ServiceDetailsWorkCell.xib */,
+				79DDC50A21300432009BBE7B /* ServiceDetailsWorkCell.swift */,
+				79DDC510213017C9009BBE7B /* ServiceDetailsBookingCell.xib */,
+				79DDC50C2130044B009BBE7B /* ServiceDetailsBookingCell.swift */,
+				79615F502133F49B0036CC86 /* ServiceDetailHeader.xib */,
+				79615F522133F5160036CC86 /* ServiceDetailHeader.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		79F48135212ACB1400D314D3 /* Successfull */ = {
+			isa = PBXGroup;
+			children = (
+				79F48136212ACB3600D314D3 /* SuccessfullViewController.swift */,
+			);
+			path = Successfull;
+			sourceTree = "<group>";
+		};
+		79F48142212B112E00D314D3 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				79F4814B212B12D700D314D3 /* Scan.storyboard */,
+				792A740C212C1AF7002BD12F /* ConnectNavigationController.swift */,
+				792A7406212BF1C6002BD12F /* Connect */,
+				792A7407212BF1E3002BD12F /* SuccessConnector */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		79F7C888211AC4250023E999 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				79443AF62119D72F000A8591 /* ProblemTab.xib */,
+				79443AF82119D73A000A8591 /* ProblemTab.swift */,
+			);
+			path = Problems;
+			sourceTree = "<group>";
+		};
+		79F7C889211AC42E0023E999 /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				79443AF12119D5D6000A8591 /* StatisticTab.xib */,
+				79443AF32119D5E9000A8591 /* StatisticTab.swift */,
+			);
+			path = Statistic;
+			sourceTree = "<group>";
+		};
+		79F7C88A211AC4350023E999 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				79443AFC2119D751000A8591 /* VehicleHistoryTab.xib */,
+				79443AFA2119D744000A8591 /* VehicleHistoryTab.swift */,
+				79F7C88C211AC45C0023E999 /* HistoryCell.xib */,
+				79F7C88E211AC46B0023E999 /* HistoryCell.swift */,
+				79DDC4FA213000AE009BBE7B /* ServiceDetails */,
+				79615F452133EB450036CC86 /* Review */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		79F7C88B211AC43C0023E999 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				79443AFE2119D767000A8591 /* ProfileTab.xib */,
+				79443B002119D777000A8591 /* ProfileTab.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		79F868DE212437F100599959 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				79F868E3212437F100599959 /* Options.swift */,
+				79F868DF212437F100599959 /* MenuAnimator.swift */,
+				79F868E0212437F100599959 /* MenuContainerViewController.swift */,
+				79F868E1212437F100599959 /* MenuTransitioningDelegate.swift */,
+				79F868E2212437F100599959 /* MenuViewController.swift */,
+				79F868E4212437F100599959 /* SideMenuItemContent.swift */,
+				79F868E5212437F100599959 /* SideMenuItemOptions.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		79F868F021243A1900599959 /* AccountHistoryTab */ = {
+			isa = PBXGroup;
+			children = (
+				794BA2DB21232CB8001ABB52 /* AccountHistoryTab.xib */,
+				794BA2D921232CAA001ABB52 /* AccountHistoryTab.swift */,
+				794BA2E021232E96001ABB52 /* GarageHistoryCell.xib */,
+				794BA2DE21232E87001ABB52 /* GarageHistoryCell.swift */,
+			);
+			path = AccountHistoryTab;
+			sourceTree = "<group>";
+		};
+		79F868F121243A2800599959 /* FavoritesTab */ = {
+			isa = PBXGroup;
+			children = (
+				793E82A92121D42900DEAA71 /* FavoritesTab.xib */,
+				793E82A72121D3F200DEAA71 /* FavoritesTab.swift */,
+			);
+			path = FavoritesTab;
+			sourceTree = "<group>";
+		};
+		79F868F421243B9100599959 /* DrivaMenu */ = {
+			isa = PBXGroup;
+			children = (
+				79F868F221243B8800599959 /* DrivaMenu.storyboard */,
+				79F868F521243D6600599959 /* HostMenuViewController.swift */,
+				79F868EE212439E600599959 /* DrivaMenuController.swift */,
+				79F868F921245F0C00599959 /* MenuCell.swift */,
+			);
+			path = DrivaMenu;
+			sourceTree = "<group>";
+		};
+		79F868FB2124749100599959 /* ReviewsTab */ = {
+			isa = PBXGroup;
+			children = (
+				79F868FC212474DE00599959 /* ReviewsTab.xib */,
+				79F868FE2124756A00599959 /* ReviewsTab.swift */,
+				79F8690221247E6400599959 /* ReviewCell.xib */,
+				79F869002124766100599959 /* ReviewCell.swift */,
+			);
+			path = ReviewsTab;
+			sourceTree = "<group>";
+		};
+		79FF70FB2122BF840008E564 /* Garage */ = {
+			isa = PBXGroup;
+			children = (
+				79FF70F92122BF7F0008E564 /* GarageViewController.swift */,
+				79FF70FC2122BF9D0008E564 /* GarageConfigurator.swift */,
+				79FF70FE2122BFA60008E564 /* GaragePresenter.swift */,
+				79FF71002122BFB10008E564 /* GarageRouter.swift */,
+				794BA2CA2122EF9B001ABB52 /* Tabs */,
+			);
+			path = Garage;
+			sourceTree = "<group>";
+		};
+		8185D8582119100F00413AF7 = {
+			isa = PBXGroup;
+			children = (
+				8185D8632119100F00413AF7 /* Driva */,
+				8185D87A2119101200413AF7 /* DrivaUITests */,
+				8185D8622119100F00413AF7 /* Products */,
+				CE17F158A6563D016A086D23 /* Pods */,
+				8A9D98466167EBE36DBC481D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8185D8622119100F00413AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8185D8612119100F00413AF7 /* Driva.app */,
+				8185D8772119101200413AF7 /* DrivaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8185D8632119100F00413AF7 /* Driva */ = {
+			isa = PBXGroup;
+			children = (
+				8185D8642119101000413AF7 /* AppDelegate.swift */,
+				794021D3211985000039ED49 /* BaseViewController.swift */,
+				794BA2CF212316DE001ABB52 /* Constants.swift */,
+				79F4813A212ADE3A00D314D3 /* VehiclesHelper.swift */,
+				79342813213822520013F407 /* NavigationMode.swift */,
+				79443AF52119D6ED000A8591 /* Extensions */,
+				79443AE82119996F000A8591 /* Model */,
+				795CA950211D6C360044EFBF /* View */,
+				8185D88C211912D400413AF7 /* View Controllers */,
+				8185D88D211912FB00413AF7 /* Resources */,
+			);
+			path = Driva;
+			sourceTree = "<group>";
+		};
+		8185D87A2119101200413AF7 /* DrivaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8185D87B2119101200413AF7 /* DrivaUITests.swift */,
+				8185D87D2119101200413AF7 /* Info.plist */,
+			);
+			path = DrivaUITests;
+			sourceTree = "<group>";
+		};
+		8185D88C211912D400413AF7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7954B9AF2126ED740053AE90 /* PhotoEdit */,
+				7954B9AE2126ECE60053AE90 /* Auth */,
+				7945A72D2125BED800506FFD /* OnBoarding */,
+				79F868F421243B9100599959 /* DrivaMenu */,
+				793F8E2A212EEA3100D740C0 /* Problems */,
+				7954B98A2126ADCB0053AE90 /* MenuItems */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8185D88D211912FB00413AF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7955520321395ED1003A3D27 /* Driva-Bridging-Header.h */,
+				8185D86A2119101000413AF7 /* Main.storyboard */,
+				8185D86D2119101100413AF7 /* Assets.xcassets */,
+				8185D86F2119101100413AF7 /* LaunchScreen.storyboard */,
+				8185D8722119101200413AF7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8A9D98466167EBE36DBC481D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE2DD5DC9C115BCA097E0D4E /* Pods_Driva.framework */,
+				E0298A2CCDD7209664E77A58 /* Pods_DrivaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE17F158A6563D016A086D23 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21192024800587CA8E3B0A11 /* Pods-Driva.debug.xcconfig */,
+				E6B8710415E164E32E2C894A /* Pods-Driva.release.xcconfig */,
+				93658D16C127DC777EC0A75A /* Pods-DrivaUITests.debug.xcconfig */,
+				08E8DEE05DCDE2DCA2A7364D /* Pods-DrivaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8185D8602119100F00413AF7 /* Driva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8185D8802119101200413AF7 /* Build configuration list for PBXNativeTarget "Driva" */;
+			buildPhases = (
+				FC8F3960999F8E1BA60A90AE /* [CP] Check Pods Manifest.lock */,
+				8185D85D2119100F00413AF7 /* Sources */,
+				8185D85E2119100F00413AF7 /* Frameworks */,
+				8185D85F2119100F00413AF7 /* Resources */,
+				F8FEB6B2012577464BC16E6D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Driva;
+			productName = Driva;
+			productReference = 8185D8612119100F00413AF7 /* Driva.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8185D8762119101200413AF7 /* DrivaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8185D8832119101200413AF7 /* Build configuration list for PBXNativeTarget "DrivaUITests" */;
+			buildPhases = (
+				D7F0B3CFFD7AE0DF56D43156 /* [CP] Check Pods Manifest.lock */,
+				8185D8732119101200413AF7 /* Sources */,
+				8185D8742119101200413AF7 /* Frameworks */,
+				8185D8752119101200413AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8185D8792119101200413AF7 /* PBXTargetDependency */,
+			);
+			name = DrivaUITests;
+			productName = DrivaUITests;
+			productReference = 8185D8772119101200413AF7 /* DrivaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8185D8592119100F00413AF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Charlyn Keating Media LLC";
+				TargetAttributes = {
+					8185D8602119100F00413AF7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					8185D8762119101200413AF7 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 8185D8602119100F00413AF7;
+					};
+				};
+			};
+			buildConfigurationList = 8185D85C2119100F00413AF7 /* Build configuration list for PBXProject "Driva" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+				"da-DK",
+				de,
+				es,
+				fr,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nl,
+				pl,
+				pt,
+				ru,
+				tr,
+				vi,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 8185D8582119100F00413AF7;
+			productRefGroup = 8185D8622119100F00413AF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8185D8602119100F00413AF7 /* Driva */,
+				8185D8762119101200413AF7 /* DrivaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8185D85F2119100F00413AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				795CA965211DB3BB0044EFBF /* Garages.storyboard in Resources */,
+				793428122138124D0013F407 /* Upgrade.storyboard in Resources */,
+				79615F512133F49B0036CC86 /* ServiceDetailHeader.xib in Resources */,
+				7954B9B12126ED820053AE90 /* PhotoEdit.storyboard in Resources */,
+				794BA2D8212320FF001ABB52 /* GarageGalleryCell.xib in Resources */,
+				79F7C88D211AC45C0023E999 /* HistoryCell.xib in Resources */,
+				794BA2CC2122EFC4001ABB52 /* GarageProfileTab.xib in Resources */,
+				793B1AFC2119E954004EC55E /* ProblemCell.xib in Resources */,
+				79F8690321247E6400599959 /* ReviewCell.xib in Resources */,
+				794BA2DC21232CB8001ABB52 /* AccountHistoryTab.xib in Resources */,
+				793F8E2C212EEA5B00D740C0 /* Problems.storyboard in Resources */,
+				794BA2E121232E96001ABB52 /* GarageHistoryCell.xib in Resources */,
+				79443AF22119D5D6000A8591 /* StatisticTab.xib in Resources */,
+				794BA2D2212319C0001ABB52 /* GarageGalleryTab.xib in Resources */,
+				795CA95B211DAA430044EFBF /* EngineTab.xib in Resources */,
+				7945A72F2125BF5000506FFD /* OnBoarding.storyboard in Resources */,
+				8185D8712119101100413AF7 /* LaunchScreen.storyboard in Resources */,
+				79615F472133EB580036CC86 /* Review.storyboard in Resources */,
+				794491C421359D81007D6B76 /* SelectDate.storyboard in Resources */,
+				792A740F212C3548002BD12F /* AdapterView.xib in Resources */,
+				793E82A42121D2B400DEAA71 /* GarageCell.xib in Resources */,
+				7954B9982126C3D90053AE90 /* SignUp.storyboard in Resources */,
+				79615F5821342E590036CC86 /* BookingGarage.storyboard in Resources */,
+				79F868FD212474DE00599959 /* ReviewsTab.xib in Resources */,
+				79443AF72119D72F000A8591 /* ProblemTab.xib in Resources */,
+				7945A7222125680500506FFD /* Settings.storyboard in Resources */,
+				793E82AA2121D42900DEAA71 /* FavoritesTab.xib in Resources */,
+				79F4814C212B12D700D314D3 /* Scan.storyboard in Resources */,
+				79A798B22136CFD800324C85 /* PictureController.storyboard in Resources */,
+				7934281B21382D540013F407 /* Notifications.storyboard in Resources */,
+				793E829C2121C46700DEAA71 /* Account.storyboard in Resources */,
+				7900D7D5212AB2EB0065A30D /* AddVehicle.storyboard in Resources */,
+				794491AC21353763007D6B76 /* Bookings.storyboard in Resources */,
+				791FDF60211C8B7D009403C0 /* Diagnostic.storyboard in Resources */,
+				794021CC211984180039ED49 /* Vehicle.storyboard in Resources */,
+				793E82952121763300DEAA71 /* VehicleTemperatureCell.xib in Resources */,
+				79DDC511213017C9009BBE7B /* ServiceDetailsBookingCell.xib in Resources */,
+				8185D86E2119101100413AF7 /* Assets.xcassets in Resources */,
+				79F868F821243DBA00599959 /* Dashboard.storyboard in Resources */,
+				7954B98D2126AE000053AE90 /* Login.storyboard in Resources */,
+				79443AFD2119D751000A8591 /* VehicleHistoryTab.xib in Resources */,
+				79F868F321243B8800599959 /* DrivaMenu.storyboard in Resources */,
+				8185D86C2119101000413AF7 /* Main.storyboard in Resources */,
+				79443AFF2119D767000A8591 /* ProfileTab.xib in Resources */,
+				79DDC50F21301794009BBE7B /* ServiceDetailsWorkCell.xib in Resources */,
+				79DDC504213000F3009BBE7B /* ServiceDetails.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8185D8752119101200413AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D7F0B3CFFD7AE0DF56D43156 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrivaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8FEB6B2012577464BC16E6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Driva/Pods-Driva-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Driva/Pods-Driva-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC8F3960999F8E1BA60A90AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Driva-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8185D85D2119100F00413AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7946975C21198F0F007FB92D /* VehicleCell.swift in Sources */,
+				7900D7EA212AC1C40065A30D /* AddVehicleRouter.swift in Sources */,
+				793F8E3F212F073800D740C0 /* ProblemDetailsConfigurator.swift in Sources */,
+				7954B9A92126D3320053AE90 /* SignUpStep2Configurator.swift in Sources */,
+				79615F6221342F460036CC86 /* BookingGarageRouter.swift in Sources */,
+				794491AE21353875007D6B76 /* BookingsViewController.swift in Sources */,
+				79FE534921384B1600ACB7F5 /* SuccessConnectorPresenter.swift in Sources */,
+				8185D8692119101000413AF7 /* DiagnosticViewController.swift in Sources */,
+				79A798B62136ECF300324C85 /* FilterViewController.swift in Sources */,
+				793F8E43212F075300D740C0 /* ProblemDetailsRouter.swift in Sources */,
+				7954B9AD2126D34A0053AE90 /* SignUpStep2Router.swift in Sources */,
+				79A798AE2136A13500324C85 /* Date.swift in Sources */,
+				793F8E39212EF69D00D740C0 /* ProblemsNavigationController.swift in Sources */,
+				7945A7332125C39900506FFD /* OnBoardingPresenter.swift in Sources */,
+				794021D0211984AC0039ED49 /* VehiclePresenter.swift in Sources */,
+				792A740D212C1AF7002BD12F /* ConnectNavigationController.swift in Sources */,
+				79F48139212AD2AB00D314D3 /* AddVehicleNavigationController.swift in Sources */,
+				79F4814E212B1F2100D314D3 /* SuccessConnectViewController.swift in Sources */,
+				794491CE2135A0F1007D6B76 /* DateCell.swift in Sources */,
+				79F868EC212437F100599959 /* SideMenuItemOptions.swift in Sources */,
+				7954B9B52126ED9D0053AE90 /* PhotoEditConfigurator.swift in Sources */,
+				79FF70FA2122BF7F0008E564 /* GarageViewController.swift in Sources */,
+				79F868F621243D6600599959 /* HostMenuViewController.swift in Sources */,
+				795CA952211D6C990044EFBF /* RoundedView.swift in Sources */,
+				79DDC5152130262F009BBE7B /* ServiceDetailsVehicleCell.swift in Sources */,
+				7945A72A2125684500506FFD /* SettingsRouter.swift in Sources */,
+				793428102138094D0013F407 /* UpgradeViewController.swift in Sources */,
+				7945A7242125682500506FFD /* SettingsViewController.swift in Sources */,
+				79615F5C21342F290036CC86 /* BookingGarageViewController.swift in Sources */,
+				79FF71052122DDC40008E564 /* GarageTabBar.swift in Sources */,
+				79615F6021342F3E0036CC86 /* BookingGaragePresenter.swift in Sources */,
+				793E82AC2121DFC000DEAA71 /* AccountTabBar.swift in Sources */,
+				7954B9A32126D2E60053AE90 /* SignUpStep1Configurator.swift in Sources */,
+				79F868E8212437F100599959 /* MenuTransitioningDelegate.swift in Sources */,
+				79443B012119D777000A8591 /* ProfileTab.swift in Sources */,
+				7954B9952126AEC30053AE90 /* LoginRouter.swift in Sources */,
+				794BA2CE2122F011001ABB52 /* GarageProfileTab.swift in Sources */,
+				7955523521395ED3003A3D27 /* TOCropViewControllerTransitioning.m in Sources */,
+				7954B9B72126EDA70053AE90 /* PhotoEditPresenter.swift in Sources */,
+				7900D7E8212AC1B60065A30D /* AddVehiclePresenter.swift in Sources */,
+				794491C621359D90007D6B76 /* SelectViewController.swift in Sources */,
+				7900D7E4212AC19E0065A30D /* AddVehicleViewController.swift in Sources */,
+				794491BF21355187007D6B76 /* SelectProblemRouter.swift in Sources */,
+				79DDC500213000E2009BBE7B /* ServiceDetailsConfigurator.swift in Sources */,
+				794491B921355164007D6B76 /* SelectProblemViewController.swift in Sources */,
+				7945A7352125C3A500506FFD /* OnBoardingRouter.swift in Sources */,
+				793E82A22121C48A00DEAA71 /* AccountRouter.swift in Sources */,
+				79F869012124766100599959 /* ReviewCell.swift in Sources */,
+				79F4814A212B121100D314D3 /* ConnectRouter.swift in Sources */,
+				7900D7DF212AC0ED0065A30D /* SearchVehicleConfigurator.swift in Sources */,
+				794491B4213538B1007D6B76 /* BookingsPresenter.swift in Sources */,
+				7955523621395ED3003A3D27 /* UIImage+CropRotate.m in Sources */,
+				79615F532133F5160036CC86 /* ServiceDetailHeader.swift in Sources */,
+				7954B9AB2126D33E0053AE90 /* SignUpStep2Presenter.swift in Sources */,
+				79F868FF2124756A00599959 /* ReviewsTab.swift in Sources */,
+				7934280D2137F35A0013F407 /* GarageTypeCell.swift in Sources */,
+				7900D7E6212AC1AA0065A30D /* AddVehicleConfigurator.swift in Sources */,
+				7954B9A02126C47B0053AE90 /* SignUpStep1Router.swift in Sources */,
+				795CA963211DB3A80044EFBF /* GaragesRouter.swift in Sources */,
+				794021CE211984A30039ED49 /* VehicleConfigurator.swift in Sources */,
+				7954B99A2126C3E50053AE90 /* SignUpStep1ViewController.swift in Sources */,
+				79F868EF212439E600599959 /* DrivaMenuController.swift in Sources */,
+				795CA96E211DD41E0044EFBF /* CircularProgressContainer.swift in Sources */,
+				8185D8872119124600413AF7 /* AccountViewController.swift in Sources */,
+				794491B02135388E007D6B76 /* BookingCell.swift in Sources */,
+				7954B9912126AEB40053AE90 /* LoginConfigurator.swift in Sources */,
+				79DDC50B21300432009BBE7B /* ServiceDetailsWorkCell.swift in Sources */,
+				79615F4B2133EB870036CC86 /* LeaveReviewConfigurator.swift in Sources */,
+				795CA96D211DD41E0044EFBF /* CircularProgress.swift in Sources */,
+				79A798B02136CFB800324C85 /* PictureViewController.swift in Sources */,
+				8185D8652119101000413AF7 /* AppDelegate.swift in Sources */,
+				79F48150212B1FE400D314D3 /* SuccessConnectConfigurator.swift in Sources */,
+				7955523C21395ED3003A3D27 /* TOCropView.m in Sources */,
+				79DDC502213000E9009BBE7B /* ServiceDetailsRouter.swift in Sources */,
+				79F868EB212437F100599959 /* SideMenuItemContent.swift in Sources */,
+				7934281D213832BD0013F407 /* NotificationsPresenter.swift in Sources */,
+				793F8E30212EEC8D00D740C0 /* ProblemsViewController.swift in Sources */,
+				794021D4211985000039ED49 /* BaseViewController.swift in Sources */,
+				7955523421395ED3003A3D27 /* TOCroppedImageAttributes.m in Sources */,
+				793E82A02121C47E00DEAA71 /* AccountConfigurator.swift in Sources */,
+				79615F4F2133EC6D0036CC86 /* LeaveReviewRouter.swift in Sources */,
+				794491B22135389A007D6B76 /* BookingsConfigurator.swift in Sources */,
+				7954B98F2126AEA90053AE90 /* LoginViewController.swift in Sources */,
+				795CA959211DAA250044EFBF /* EngineTab.swift in Sources */,
+				79F868EA212437F100599959 /* Options.swift in Sources */,
+				794491B6213538BB007D6B76 /* BookingsRouter.swift in Sources */,
+				7945A7372125C3B100506FFD /* OnBoardingConfigurator.swift in Sources */,
+				7934281621382A900013F407 /* UpgradeNavigationController.swift in Sources */,
+				7900D7D7212AB2FA0065A30D /* SearchVehicleViewController.swift in Sources */,
+				79FF70FF2122BFA60008E564 /* GaragePresenter.swift in Sources */,
+				79F48144212B11D500D314D3 /* ConnectViewController.swift in Sources */,
+				79DDC4F9212FF136009BBE7B /* ResetConfirmationViewController.swift in Sources */,
+				7945A7282125683B00506FFD /* SettingsPresenter.swift in Sources */,
+				793F8E34212EECA800D740C0 /* ProblemsPresenter.swift in Sources */,
+				7945A7392125C65200506FFD /* OnBoardingCell.swift in Sources */,
+				79443AF42119D5E9000A8591 /* StatisticTab.swift in Sources */,
+				79F48146212B11FE00D314D3 /* ConnectConfigurator.swift in Sources */,
+				795CA961211DB3900044EFBF /* GaragesPresenter.swift in Sources */,
+				79A798B42136E7BC00324C85 /* SortViewController.swift in Sources */,
+				79615F5E21342F360036CC86 /* BookingGarageConfigurator.swift in Sources */,
+				791FDF5E211C8B66009403C0 /* DiagnosticConfigurator.swift in Sources */,
+				7900D7DA212AB6890065A30D /* PlateNumberField.swift in Sources */,
+				793E829821218FE400DEAA71 /* GarageCell.swift in Sources */,
+				793F8E41212F074300D740C0 /* ProblemDetailsPresenter.swift in Sources */,
+				793F8E3D212F072B00D740C0 /* ProblemDetailsViewController.swift in Sources */,
+				794BA2D0212316DE001ABB52 /* Constants.swift in Sources */,
+				7955523921395ED3003A3D27 /* TOCropOverlayView.m in Sources */,
+				79F868E9212437F100599959 /* MenuViewController.swift in Sources */,
+				793E82A82121D3F200DEAA71 /* FavoritesTab.swift in Sources */,
+				79FF70FD2122BF9D0008E564 /* GarageConfigurator.swift in Sources */,
+				794491BB21355170007D6B76 /* SelectProblemConfigurator.swift in Sources */,
+				79615F442133E5C10036CC86 /* ServiceDetailsNavigationController.swift in Sources */,
+				79443AF92119D73A000A8591 /* ProblemTab.swift in Sources */,
+				79FF71012122BFB10008E564 /* GarageRouter.swift in Sources */,
+				8185D88B211912A600413AF7 /* GaragesViewController.swift in Sources */,
+				793F8E36212EECB400D740C0 /* ProblemsRouter.swift in Sources */,
+				7954B9B92126EDB20053AE90 /* PhotoEditRouter.swift in Sources */,
+				79F7C88F211AC46B0023E999 /* HistoryCell.swift in Sources */,
+				79DDC51321302615009BBE7B /* ServiceDetailsGarageCell.swift in Sources */,
+				794BA2D4212319CE001ABB52 /* GarageGalleryTab.swift in Sources */,
+				795CA956211D79A70044EFBF /* DiagnosticTabCell.swift in Sources */,
+				7954B9A72126D3220053AE90 /* SignUpStep2ViewController.swift in Sources */,
+				793E829E2121C47400DEAA71 /* AccountPresenter.swift in Sources */,
+				79615F5521340E1F0036CC86 /* ReviewSubmitionViewController.swift in Sources */,
+				795CA95F211DB3850044EFBF /* GaragesConfigurator.swift in Sources */,
+				7955523321395ED3003A3D27 /* TOActivityCroppedImageProvider.m in Sources */,
+				79443AFB2119D744000A8591 /* VehicleHistoryTab.swift in Sources */,
+				7954B9932126AEBB0053AE90 /* LoginPresenter.swift in Sources */,
+				79F4813B212ADE3A00D314D3 /* VehiclesHelper.swift in Sources */,
+				7945A7262125683100506FFD /* SettingsConfigurator.swift in Sources */,
+				79443AEA211999C9000A8591 /* VehicleTabBar.swift in Sources */,
+				791FDF5C211C8B50009403C0 /* DiagnosticRouter.swift in Sources */,
+				7934281F213832C80013F407 /* NotificationsConfigurator.swift in Sources */,
+				794BA2D621232082001ABB52 /* GarageGalleryCell.swift in Sources */,
+				792A7411212C35F0002BD12F /* ConnectView.swift in Sources */,
+				79615F4D2133EC650036CC86 /* LeaveReviewPresenter.swift in Sources */,
+				79DDC4FC213000D0009BBE7B /* ServiceDetailsViewController.swift in Sources */,
+				7955523821395ED3003A3D27 /* TOCropViewController.m in Sources */,
+				79DDC50D2130044B009BBE7B /* ServiceDetailsBookingCell.swift in Sources */,
+				79FF71032122CFB40008E564 /* Garage.swift in Sources */,
+				794BA2DA21232CAA001ABB52 /* AccountHistoryTab.swift in Sources */,
+				79F48148212B120900D314D3 /* ConnectPresenter.swift in Sources */,
+				7900D7DD212AC0CB0065A30D /* SearchVehiclePresenter.swift in Sources */,
+				795CA970211DE0430044EFBF /* VehicleTemperatureCell.swift in Sources */,
+				79F844BE2119E211009E264A /* ProblemCell.swift in Sources */,
+				7934280B2137EF670013F407 /* GarageTypesViewController.swift in Sources */,
+				79443B032119D7E7000A8591 /* UIView.swift in Sources */,
+				795CA954211D78D20044EFBF /* TabsCollectionBar.swift in Sources */,
+				7946975E211990D5007FB92D /* Vehicle.swift in Sources */,
+				794491C1213557FA007D6B76 /* ProblemCategoryCell.swift in Sources */,
+				794491CA21359DF1007D6B76 /* SelectDatePresenter.swift in Sources */,
+				79A798B92136F87600324C85 /* FilterCells.swift in Sources */,
+				79DDC4FE213000D9009BBE7B /* ServiceDetailsPresenter.swift in Sources */,
+				7900D7E1212AC1060065A30D /* SearchVehicleRouter.swift in Sources */,
+				793428232138363D0013F407 /* NotificationCell.swift in Sources */,
+				794491A921352B37007D6B76 /* BookingApprovalViewController.swift in Sources */,
+				79F868E7212437F100599959 /* MenuContainerViewController.swift in Sources */,
+				79F48137212ACB3600D314D3 /* SuccessfullViewController.swift in Sources */,
+				791FDF5A211C8B43009403C0 /* DiagnosticPresenter.swift in Sources */,
+				7955523A21395ED3003A3D27 /* TOCropScrollView.m in Sources */,
+				79FE534B21384B6200ACB7F5 /* SuccessConnectorRouter.swift in Sources */,
+				7955520221395EB3003A3D27 /* CropViewController.swift in Sources */,
+				79F48141212AE1DD00D314D3 /* VehicleProfile.swift in Sources */,
+				795CA967211DB64F0044EFBF /* DrivaNavigationBar.swift in Sources */,
+				7954B99E2126C4720053AE90 /* SignUpStep1Presenter.swift in Sources */,
+				794BA2DF21232E87001ABB52 /* GarageHistoryCell.swift in Sources */,
+				79615F5A21342EA40036CC86 /* BookingGarageNavigationController.swift in Sources */,
+				79F868E6212437F100599959 /* MenuAnimator.swift in Sources */,
+				794491BD2135517E007D6B76 /* SelectProblemPresenter.swift in Sources */,
+				79615F492133EB6E0036CC86 /* LeaveReviewViewController.swift in Sources */,
+				793F8E32212EEC9D00D740C0 /* ProblemsConfigurator.swift in Sources */,
+				7934281921382D110013F407 /* NotificationsViewController.swift in Sources */,
+				8185D8672119101000413AF7 /* VehicleViewController.swift in Sources */,
+				7954B9B32126ED8F0053AE90 /* PhotoEditViewController.swift in Sources */,
+				794021D2211984F10039ED49 /* VehicleRouter.swift in Sources */,
+				79F868FA21245F0C00599959 /* MenuCell.swift in Sources */,
+				794491C821359DDF007D6B76 /* SelectDateConfigurator.swift in Sources */,
+				794491CC21359DFC007D6B76 /* SelectDateRouter.swift in Sources */,
+				79342814213822520013F407 /* NavigationMode.swift in Sources */,
+				79342821213832CE0013F407 /* NotificationsRouter.swift in Sources */,
+				7945A7312125C38100506FFD /* OnBoardingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8185D8732119101200413AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8185D87C2119101200413AF7 /* DrivaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8185D8792119101200413AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8185D8602119100F00413AF7 /* Driva */;
+			targetProxy = 8185D8782119101200413AF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8185D86A2119101000413AF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8185D86B2119101000413AF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8185D86F2119101100413AF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8185D8702119101100413AF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8185D87E2119101200413AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8185D87F2119101200413AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8185D8812119101200413AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21192024800587CA8E3B0A11 /* Pods-Driva.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MNXTPG94A8;
+				INFOPLIST_FILE = "$(SRCROOT)/Driva/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominicatagana.driva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Driva/Resources/Driva-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8185D8822119101200413AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6B8710415E164E32E2C894A /* Pods-Driva.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MNXTPG94A8;
+				INFOPLIST_FILE = "$(SRCROOT)/Driva/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominicatagana.driva;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Driva/Resources/Driva-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8185D8842119101200413AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93658D16C127DC777EC0A75A /* Pods-DrivaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W2HF9KC53;
+				INFOPLIST_FILE = DrivaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlynkeating.DrivaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Driva;
+			};
+			name = Debug;
+		};
+		8185D8852119101200413AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E8DEE05DCDE2DCA2A7364D /* Pods-DrivaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W2HF9KC53;
+				INFOPLIST_FILE = DrivaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.charlynkeating.DrivaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Driva;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8185D85C2119100F00413AF7 /* Build configuration list for PBXProject "Driva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8185D87E2119101200413AF7 /* Debug */,
+				8185D87F2119101200413AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8185D8802119101200413AF7 /* Build configuration list for PBXNativeTarget "Driva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8185D8812119101200413AF7 /* Debug */,
+				8185D8822119101200413AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8185D8832119101200413AF7 /* Build configuration list for PBXNativeTarget "DrivaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8185D8842119101200413AF7 /* Debug */,
+				8185D8852119101200413AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8185D8592119100F00413AF7 /* Project object */;
+}
